@@ -1,0 +1,175 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+    <!-- .main-filter -->
+    <div class="main-filter">
+        <div class="ui full segment">
+            <div class="ui inline transparent large dropdown" data-add=" 채널의 추천과정"><!-- data-addText 선택시 추가될 text // -->
+                <div class="text">AI 채널의 추천과정</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item">AI</div>
+                    <div class="item">Design</div>
+                    <div class="item">Database</div>
+                    <div class="item">Project Managing</div>
+                    <div class="item">Big Data</div>
+                    <div class="item">AI</div>
+                    <div class="item">Design</div>
+                    <div class="item">Database</div>
+                    <div class="item">Project Managing</div>
+                    <div class="item">Big Data</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // .main-filter -->
+
+    <div class="ui full segment">
+        <div class="sort-reult">
+            <div class="comments-sort">
+                <button type="button" class="btn-filter-blue"><span>Filter(05)</span></button>
+            </div>
+            <!--filter-->
+            <div class="filter-table">
+                <div class="title">Filter</div>
+                <table>
+                    <tr>
+                        <th>교육유형</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Course(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Video(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Audio(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>e-Learning(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Classroom(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Community(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Web Page(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Documents(13)</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>난이도</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Basic</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>Intermediate</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Advanced</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Expert</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>교육기관</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>mySUNI</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>Coursera</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Linkedin</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>핵인싸</th>
+                        <td>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="insa" checked="checked" class="hidden" tabindex="0">
+                                <label>선택안함</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="insa" class="hidden" tabindex="0">
+                                <label>유</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="insa" class="hidden" tabindex="0">
+                                <label>무</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="selected">
+                    <table>
+                        <tr>
+                            <th><button class="clear"><i class="icon reset"><span class="blind">reset</span></i></button><span>전체해제</span></th>
+                            <td>
+                                <button class="ui button del">AI</button>
+                                <button class="ui button del">e-Learning</button>
+                                <button class="ui button del">Intermediate</button>
+                                <button class="ui button del">mySUNI</button>
+                                <button class="ui button del">Coursera</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="no-cont-wrap type2">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">필터 조건에 해당하는 학습이 없습니다.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+<script>
+$('.ui.button.toggle').state();
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

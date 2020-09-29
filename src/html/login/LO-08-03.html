@@ -1,0 +1,118 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+<!-- .content -->
+<section>
+    <div class="interest-content lo-08-03">
+        <div class="header">
+            <div class="logo">
+                <i class="sk-university-login icon"><span class="blind">mySUNI</span></i>
+            </div>
+            <div class="ui steps number-step type2">
+                <div class="step">
+                    <span class="number"><span class="blind">1</span></span>
+                    <span class="title">안내</span>
+                </div>
+                <div class="step">
+                    <span class="number"><span class="blind">2</span></span>
+                    <span class="title">개인정보동의</span>
+                </div>
+                <div class="active step">
+                    <span class="number"><span class="blind">3</span></span>
+                    <span class="title">현 직무</span>
+                </div>
+                <div class="step">
+                    <span class="number"><span class="blind">4</span></span>
+                    <span class="title">관심 직무</span>
+                </div>
+                <div class="step">
+                    <span class="number"><span class="blind">5</span></span>
+                    <span class="title">관심 분야</span>
+                </div>
+                <div class="step">
+                    <span class="number"><span class="blind">6</span></span>
+                    <span class="title">학습방식</span>
+                </div>
+            </div>
+        </div>
+        <div class="title-box">
+            <i class="login-sub2 woman icon"></i>
+            <h2>현직무</h2>
+            <p>
+                여러분은 어떤 직무 분야에 해당하시나요? <br />
+                수행하고 있는 업무를 기반으로 현 직무를 선택해주시기 바랍니다. <br />
+                직무분석이 완료된 관계사를 중심으로 반영되어 있으니, 해당하는 직무가 없을 경우 기타-직접입력으로 작성 해주세요.
+            </p>
+        </div>
+        <form class="ui form">
+            <div class="select-cont-wrap">
+                <div class="select-box">
+                    <div class="select-title">Step 01. 현재 직무가 속해 있는 직군을 선택해주세요.</div>
+                    <select class="ui selection dropdown">
+                        <option value="">선택해주세요.</option>
+                        <option value="Consulting">Consulting</option>
+                        <option value="Marketing & Sales">Marketing & Sales</option>
+                        <option value="Technology">Technology</option>
+                        <option value="전략기획">전략기획</option>
+                        <option value="재무">재무</option>
+                        <option value="법무">법무</option>
+                        <option value="구매">구매</option>
+                        <option value="윤리경영">윤리경영</option>
+                        <option value="대외협력">대외협력</option>
+                        <option value="기업문화">기업문화</option>
+                        <option value="경영층 보좌">경영층 보좌</option>
+                        <option value="IT">IT</option>
+                        <option value="환경안전">환경안전</option>
+                        <option value="E&P Commercial">E&P Commercial</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    <!--기타 선택시 입력-->
+                    <div class="ui h48 input" style="display:none;">
+                        <input type="text" placeholder="Optional…">
+                        <i aria-hidden="true" class="clear link icon"></i>
+                    </div>
+                </div>
+                <div class="select-box">
+                    <div class="select-title">Step 02. 현재 직무를 선택해주세요.</div>
+                    <select class="ui selection dropdown">
+                        <option value="">선택해주세요.</option>
+                        <option value="Consulting">Consulting</option>
+                        <option value="Marketing & Sales">Marketing & Sales</option>
+                        <option value="Technology">Technology</option>
+                        <option value="전략기획">전략기획</option>
+                        <option value="재무">재무</option>
+                        <option value="법무">법무</option>
+                        <option value="구매">구매</option>
+                        <option value="윤리경영">윤리경영</option>
+                        <option value="대외협력">대외협력</option>
+                        <option value="기업문화">기업문화</option>
+                        <option value="경영층 보좌">경영층 보좌</option>
+                        <option value="IT">IT</option>
+                        <option value="환경안전">환경안전</option>
+                        <option value="E&P Commercial">E&P Commercial</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    <!--기타 선택시 입력-->
+                    <div class="ui h48 input" style="display:none;">
+                        <input type="text" placeholder="Optional…">
+                        <i aria-hidden="true" class="clear link icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="button-area">
+                 <!--error-->
+                 <div class="error">직군 및 직무를 선택해주세요.</div>
+
+                <button class="ui button fix bg disabled" disabled>다음</button>
+                <!--버튼 활성화
+                <button class="ui button fix bg">다음</button>
+                -->
+            </div>
+        </form>
+    </div>
+</section>
+<!-- // .content -->
+@@include("script.html")
+</body>
+</html>

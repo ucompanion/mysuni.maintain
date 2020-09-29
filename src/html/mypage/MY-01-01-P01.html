@@ -1,0 +1,52 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+        <div class="ui base w380 modal">
+            <div class="header">
+                프로필 사진 변경
+            </div>
+            <div class="content">
+                <div class="profile-change">
+                    <div class="left">
+                        <div class="ui profile">
+                            <div class="pic s110">
+                                <img src="" alt="" id="blah" style="display:none;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text01">김유니김유니김유니김유니김유니김유니김유니김유니김유니</div>
+                        <div class="text02">SK C&C</div>
+                        <div class="text02">플랫폼 개발 1팀</div>
+                        <div class="upload">
+                            <input type="file" id="profileImage" />
+                            <label for="profileImage" class="ui orange-arrow3 button">Image upload</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions2">
+                <button class="ui button pop2 d">Cancel</button>
+                <button class="ui button pop2 p">Confirm</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+ui.fxImageUploadPreview($('#profileImage'), $('#blah'));
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

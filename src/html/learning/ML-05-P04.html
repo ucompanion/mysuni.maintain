@@ -1,0 +1,61 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w700 modal">
+            <div class="header">Report </div>
+            <div class="content">
+                <div class="scrolling-80vh">
+                    <div class="content-wrap1">
+                        <div class="table-css type1 type4">
+                            <div class="row">
+                                <div class="cell th"><span class="dot">Step 01</span></div>
+                                <div class="cell">
+                                    <div class="text2">Report Template Download</div>
+                                    <span class="text1">아래 버튼으로 등록되어 있는 Report 파일을 다운로드 받으세요.</span>
+                                    <span class="text5"><button class="ui icon left button icon-big-line2"><i class="icon download2"></i><span>Report Download</span></button></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell"><span class="dot">Step 02</span></div>
+                                <div class="cell">
+                                    <div class="text2">Report Upload</div>
+                                    <span class="text1">다운로드 받은 파일의 내용을 작성하신 후 업로드 해주세요.<br />등록하신 파일은 재 등록할 수 없으니 등록 시 주의해주세요.</span>
+                                    <div class="add-file">
+                                        <div class="ui input file">
+                                            <input type="text" placeholder="파일을 업로드해주세요." readonly />
+                                            <i aria-hidden="true" class="clear link icon"></i>
+                                            <label for="hidden-new-file" class="ui button">파일찾기</label>
+                                            <input type="file" id="hidden-new-file">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions2">
+                <button class="ui button pop2 d">Cancel</button>
+                <button class="ui button pop2 p">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

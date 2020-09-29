@@ -1,0 +1,53 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+<!-- .content -->
+<section class="content-half">
+    <div class="login-content">
+        <div class="left-area">
+            <div class="inner">
+                <p>Constant learning not only <br />makes you knowledgeable, <br />but also a better person</p>
+                <div class="illust">
+                    <img src="../../img/invalid-name.png" alt="손인사 하는 사람들" />
+                </div>
+            </div>
+        </div>
+        <div class="right-area">
+            <div class="inner pw-reset">
+                <div class="logo"><i class="sk-university-login icon"><span class="blind">mySUNI</span></i></div>
+                <h2>비밀번호 초기화</h2>
+                <form class="ui form">
+                    <div class="field">
+                        <label>이메일</label>
+                        <div class="ui h48 input">
+                            <input type="text" placeholder="Email">
+                            <i aria-hidden="true" class="clear link icon"></i>
+                        </div>
+                    </div>
+                    <div class="making-guide">
+                        <span>메일로 비밀번호 재 설정용 인증번호가 전송됩니다.</span>
+                    </div>
+                    <button class="ui button fix bg disabled" disabled>Send code</button>
+                </form>
+                <form class="ui form">
+                    <div class="field">
+                        <label>인증번호</label>
+                        <div class="ui h48 input">
+                            <input type="password" placeholder="Code number">
+                        </div>
+                    </div>
+                    <div class="making-guide">
+                        <span>메일에 전송된 인증 번호를 입력해 주세요.</span>
+                    </div>
+                    <button class="ui button fix bg disabled" disabled>Confirm</button>
+                    <button onclick="window.open('../login/LO-02-01.html')" class="ui button fix bg">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("script.html")
+</body>
+</html>

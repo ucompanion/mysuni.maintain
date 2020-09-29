@@ -1,0 +1,93 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+    <div class="ap-title">
+        <div class="inner">
+            <div class="txt1">승인관리</div>
+            <div class="txt2">유료과정 및 개인학습 정보에 대해 승인관리를 하실 수 있습니다.</div>
+        </div>
+    </div>
+
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="item" data-tab="first">유료과정</a>
+                <a class="item active" data-tab="second">개인학습</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+
+         <!-- data-tab="first"" -->
+        <div class="ui tab" data-tab="first">
+            <div class="confirm-list-wrap">
+                <div class="list-top">
+                    <div class="top">
+                        <div class="right-area">
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="radio2" checked="checked" tabindex="0" class="hidden">
+                                <label>승인요청(0)</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="radio2" tabindex="0" class="hidden">
+                                <label>반려(20)</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="radio2" tabindex="0" class="hidden">
+                                <label>승인(20)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-cont-wrap">
+                    <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                    <div class="text">등록된 정보가 없습니다.</div>
+                </div>
+            </div>
+        </div>
+        <!-- // data-tab="first" -->
+
+         <!-- data-tab="second" -->
+         <div class="ui tab active" data-tab="second">
+            <div class="confirm-list-wrap">
+                <div class="list-top">
+                    <div class="radio-wrap">
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" checked="checked" tabindex="0" class="hidden">
+                            <label>전체</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" tabindex="0" class="hidden">
+                            <label>승인대기</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" tabindex="0" class="hidden">
+                            <label>승인</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" tabindex="0" class="hidden">
+                            <label>반려</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-cont-wrap">
+                    <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                    <div class="text">승인 요청한 정보가 없습니다.</div>
+                </div>
+            </div>
+        </div>
+        <!-- // data-tab="second" -->
+
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

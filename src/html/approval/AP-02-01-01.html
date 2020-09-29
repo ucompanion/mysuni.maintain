@@ -1,0 +1,781 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+    <div class="ap-title">
+        <div class="inner">
+            <div class="txt1">승인관리</div>
+            <div class="txt2">유료과정 및 개인학습 정보에 대해 승인관리를 하실 수 있습니다.</div>
+        </div>
+    </div>
+
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="item" data-tab="first">유료과정<span class="count">+120</span></a>
+                <a class="item active" data-tab="second">개인학습<span class="count">+24</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+
+         <!-- data-tab="first"" -->
+        <div class="ui tab" data-tab="first">
+            <div class="confirm-list-wrap">
+                <div class="list-top">
+                    <div class="top">
+                        <div class="right-area">
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="radio2" checked="checked" tabindex="0" class="hidden">
+                                <label>승인요청(20)</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="radio2" tabindex="0" class="hidden">
+                                <label>반려(20)</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="radio2" tabindex="0" class="hidden">
+                                <label>승인(20)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="left-area">
+                            <div class="actions top">
+                                <button class="ui icon left button post return"><i aria-hidden="true" class="return icon"></i>반려</button>
+                                <button class="ui icon left button post approval"><i aria-hidden="true" class="approval icon"></i>승인</button>
+                                <span class="excel-wrap"><button class="ui icon left button post excel-down"><i aria-hidden="true" class="excel-down icon"></i>엑셀 다운로드</button></span>
+                            </div>
+                        </div>
+                        <div class="right-area">
+                            <div class="ui small-border dropdown selection list-title-sel">
+                                <div class="text">전체과정</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item"><span class="ellipsis">전체과정</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?AI와 Block chain과의 상관관계는 어떻게 되는가?AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?AI와 Block chain과의 상관관계는 어떻게 되는가?AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                    <div class="item"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></div>
+                                </div>
+                            </div>
+                            <div class="ui small-border dropdown selection list-num-sel">
+                                <div class="text">교육기간</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">최근 1주일</div>
+                                    <div class="item">최근 2주일</div>
+                                    <div class="item">최근 한달</div>
+                                    <div class="item">사용자 지정</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--승인요청 테이블-->
+                <div class="confirm-list typeA">
+                    <div class="row thead">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">전체선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num">No</span>
+                        <span class="cell name">신청자</span>
+                        <span class="cell team">조직</span>
+                        <span class="cell title">과정명</span>
+                        <span class="cell class">차수</span>
+                        <span class="cell status">신청현황</span>
+                        <!-- <span class="cell term">(차수)교육기간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></span> -->
+                        <span class="cell term">(차수)교육기간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></span>
+                        <span class="cell date">신청일자</span>
+                        <!-- <span class="cell pay">인당 교육금액<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></span> -->
+                        <span class="cell pay">인당 교육금액<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">20</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔구십</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오 육칠팔 일이 삼사오육칠팔일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!AI와 Block chain과의 상관관계는 어떻게 되는가?!AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">19</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!AI와 Block chain과의 상관관계는 어떻게 되는가?!AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">2</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">18</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">개발1팀</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">3</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">17</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">4</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">16</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">15</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">14</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">13</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">12</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">11</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">10</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">9</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">8</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">7</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                         <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                         <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">6</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">5</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">4</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">3</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">2</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                     <div class="row">
+                        <span class="cell ck">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0" />
+                                <label><span class="blind">선택</span></label>
+                            </div>
+                        </span>
+                        <span class="cell num"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell name"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">홍길동</span></a></span>
+                        <span class="cell team"><a href="../mypage/MY-03-01-01.html" target="_blank"><span class="ellipsis">일이삼사오육칠팔</span></a></span>
+                        <span class="cell title">
+                            <a href="../mypage/MY-03-01-01.html" target="_blank" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?!</a>
+                        </span>
+                        <span class="cell class"><a href="../mypage/MY-03-01-01.html" target="_blank">1</a></span>
+                        <span class="cell status"><a href="../mypage/MY-03-01-01.html" target="_blank">21/40</a></span>
+                        <span class="cell term"><a href="../mypage/MY-03-01-01.html" target="_blank">2020.02.20<br/>~2020.03.20</a></span>
+                        <span class="cell date"><a href="../mypage/MY-03-01-01.html" target="_blank">2019.10.08</a></span>
+                        <span class="cell pay"><a href="../mypage/MY-03-01-01.html" target="_blank">20,000</a></span>
+                    </div>
+                </div>
+                <!--//승인요청 테이블-->
+                <div class="more-comments">
+                    <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- // data-tab="first" -->
+
+         <!-- data-tab="second" -->
+         <div class="ui tab active" data-tab="second">
+            <div class="confirm-list-wrap">
+                <div class="list-top">
+                    <div class="list-number">
+                        <span>전체 <b>5,000개</b> 등록</span>
+                        <span><b>2,000개</b> 승인</span>
+                        <span><b>1,000개</b> 승인 대기 중</span>
+                        <span><b>2,000개</b> 반려</span>
+                    </div>
+                    <div class="radio-wrap">
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" checked="checked" tabindex="0" class="hidden">
+                            <label>전체</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" tabindex="0" class="hidden">
+                            <label>승인대기</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" tabindex="0" class="hidden">
+                            <label>승인</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="a" tabindex="0" class="hidden">
+                            <label>반려</label>
+                        </div>
+                    </div>
+                </div>
+                <!--개인학습 승인관리-->
+                <div class="mylearning-list-wrap">
+                    <table class="my-04-01">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th class="title">교육명</th>
+                                <th>Channel<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                                <!--<th>Channel<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>-->
+                                <th>교육시간</th>
+                                <th>등록일자</th>
+                                <th>생성자</th>
+                                <th>생성자 E-mail</th>
+                                <th>상태</th>
+                                <th>승인일자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">TrendTrendTrendTrend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정신현정신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg01234@sksk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcg@sk.com</span></td>
+                                <td>승인</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>반려</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>반려</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>반려</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>반려</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>반려</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                                <td><span class="ellipsis">Trend</span></td>
+                                <td>00시 00분</td>
+                                <td>2020.05.29</td>
+                                <td class="name"><span class="ellipsis">신현정</span></td>
+                                <td class="mail"><span class="ellipsis">abcdefg@sk.com</span></td>
+                                <td>승인대기</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//개인학습 승인관리-->
+                <div class="more-comments">
+                    <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- // data-tab="second" -->
+
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

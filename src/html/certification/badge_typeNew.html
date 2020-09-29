@@ -1,0 +1,60 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<style>
+    .content{padding:20px;}
+    h2.tt{font-size:20px; font-weight:700; margin:20px;}
+    .badgeB{float:left; margin-right:27px;}
+    .parents{margin-bottom:30px;}
+    .parents::after{content:''; display:block; clear:both;}
+    .parents .badgeB:last-child{margin-right:0}
+</style>
+<!-- .content -->
+<section class="content">
+    <div class="parents">
+        <h2 class="tt">뱃지 타입 : common</h2>
+        <div class="badge_new common">
+            <span class="issuing"><img src="../../img/logo-badgeN.png" alt="발급기관:mySUNI" /></span>
+            <span class="obj-illust"><img src="../../img/icon-common.png" alt="" /></span>
+            <p class="star-score star1"><em></em></p>
+            <span class="title"><span class="cell"><span>Customer EmpathyCustomer EmpathyCustomer EmpathyCustomer Empathy</span></span></span>
+        </div>
+        <h2 class="tt">뱃지 타입 : BM</h2>
+        <div class="badge_new bm">
+            <span class="issuing"><img src="../../img/logo-badgeN.png" alt="발급기관:mySUNI" /></span>
+            <span class="obj-illust"><img src="../../img/icon-bmdesign.png" alt="" /></span>
+            <p class="star-score"><em></em><em></em><em></em></p>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+        <h2 class="tt">뱃지 타입 : biz</h2>
+        <div class="badge_new biz">
+            <span class="issuing"><img src="../../img/logo-badgeN.png" alt="발급기관:mySUNI" /></span>
+            <span class="obj-illust"><img src="../../img/icon-biz.png" alt="" /></span>
+            <p class="star-score star2"><em></em><em></em></p>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+        <h2 class="tt">뱃지 타입 : AI</h2>
+        <div class="badge_new ai">
+            <span class="issuing"><img src="../../img/logo-badgeN.png" alt="발급기관:mySUNI" /></span>
+            <span class="obj-illust"><img src="../../img/icon-chanel-54-px.png" alt="" /></span>
+            <p class="star-score star1"><em></em></p>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+        <h2 class="tt">뱃지 타입 : manage</h2>
+        <div class="badge_new manage">
+            <span class="issuing"><img src="../../img/logo-badgeN.png" alt="발급기관:mySUNI" /></span>
+            <span class="obj-illust"><img src="../../img/icon-happy.png" alt="" /></span>
+            <p class="star-score star3"><em></em><em></em><em></em></p>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+    </div>
+
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

@@ -1,0 +1,36 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+   
+    <div class="ui base w380 modal">
+        <div class="header">
+            선수 과정 안내
+        </div>
+        <div class="content">
+            <div class="content-wrap6">
+                <div class="test-report-cont">
+                    본 과정은 선수 Course 과정을 이수하신 후에 학습이 가능합니다.
+                </div>
+            </div>
+        </div>
+        <div class="actions2">
+            <button class="ui button pop2 p">Confirm</button>
+        </div>
+    </div>
+
+</section>
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

@@ -1,0 +1,452 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+    <div class="main-info-area">
+        <div class="progress-info-wrap mypage">
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="../../img/profile-56-px.png" alt="프로필사진 임시이미지" />
+                        </div>
+                        <button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P01.html')"><i aria-hidden="true" class="photo-edit icon"></i></button>
+                    </div>
+                    <div class="text-info">
+                        <div class="name">
+                            김유니
+                        </div>
+                        <div class="part">
+                            <span>SK C&C</span><br /><span>플랫폼 개발 1팀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="ui statistic total-time">
+                        <button class="button btn-total-time" onclick="window.open('../mypage/MY-01-01-P03.html')">
+                            <span class="ui label onlytext"><i aria-hidden="true" class="total-time icon"></i><span>총 학습시간</span></span>
+                            <span class="value2">
+                                <strong>120</strong><span>h</span>
+                                <strong class="min">00</strong><span>m</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../certification/CT-03-01.html" target="_blank">
+                                <span><span class="text1">My Badge</span></span>
+                                <span><i class="icon badge35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../mypage/MY-02-01.html" target="blank">
+                                <span><span class="text1">My Stamp</span></span>
+                                <span><i class="icon stamp35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                        <div class="year">
+                            <div class="ui inline dropdown tight">
+                                <div class="text">2019</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">2019</div>
+                                    <div class="item">2018</div>
+                                    <div class="item">2017</div>
+                                    <div class="item">2016</div>
+                                    <div class="item">2015</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="channel-of-interest">
+            <div class="table-css type2">
+                <div class="row">
+                    <div class="cell vtop">
+                        <div class="tit-set">관심 Channel(32)<button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P02-2.html')"><i class="setting17 icon"></i><span class="blind">setting</span></button></div>
+                    </div>
+                    <div class="cell vtop">
+                        <div class="item-wrap"><!-- .active // -->
+                            <div class="belt">
+                                <div class="ui channel label">AI</div>
+                                <div class="ui channel label">Design</div>
+                                <div class="ui channel label">Database</div>
+                                <div class="ui channel label">Project Managing</div>
+                                <div class="ui channel label">디자인 방법론</div>
+                                <div class="ui channel label">Engineering</div>
+                                <div class="ui channel label">Production Data Analysis</div>
+                                <div class="ui channel label">DT Basics</div>
+                                <div class="ui channel label">Value</div>
+                                <div class="ui channel label">Mindfulness</div>
+                                <div class="ui channel label">AI</div>
+                                <div class="ui channel label">Design</div>
+                                <div class="ui channel label">Database</div>
+                                <div class="ui channel label">Project Managing</div>
+                                <div class="ui channel label">디자인 방법론</div>
+                                <div class="ui channel label">Engineering</div>
+                                <div class="ui channel label">Production Data Analysis</div>
+                                <div class="ui channel label">DT Basics</div>
+                                <div class="ui channel label">Value</div>
+                                <div class="ui channel label">Mindfulness</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell vtop">
+                        <div class="toggle-btn"><!-- .active // -->
+                            <button class="ui icon button img-icon"><i class="sum-open icon"></i><span class="blind">open</span></button>
+                            <button class="ui icon button img-icon"><i class="sum-close icon"></i><span class="blind">close</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="active item" data-tab="first">My Badge<span class="count">+120</span></a>
+                <a class="item" data-tab="second">My Stamp<span class="count">+24</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui full segment">
+
+        <!-- data-tab="first" -->
+        <div class="ui tab active" data-tab="first">
+            <div class="top-guide-title no-height">
+                <div class="list-number">총 <strong>22개</strong>의 Badge를 획득하였습니다</div>
+                <div class="right-wrap">
+                    <select class="ui small-border dropdown s160 m0">
+                        <option value="Level All">Level All</option>
+                    </select>
+                </div>
+            </div>
+            <div class="badge-list pb0">
+                <ul>
+                    <li>
+                        <a href="#none" class="badge s280 basic">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 advanced">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 basic">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 intermediate">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                    <li>
+                        <a href="#none" class="badge s280 advanced">
+                            <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+                            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                        </a>
+                        <div class="badge-name"><span>AI/DT Literacy Customer Empathy</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- // data-tab="first" -->
+
+        <!-- data-tab="second" -->
+        <div class="ui tab" data-tab="second">
+            <div class="top-guide-title">
+                <div class="left-wrap">
+                    <button class="ui icon left button post excel-down"><i aria-hidden="true" class="excel-down icon"></i>엑셀 다운로드</button>
+                    <div class="list-number">총 <strong>20개</strong>의 리스트가 있습니다.</div>
+                </div>
+                <div class="right-wrap">
+                    <button type="button" class="btn-filter-blue"><span>Filter(00)</span></button>
+                </div>
+            </div>
+            
+            <div class="mystamp-list-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>스템프<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>스템프<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>-->
+                            <th>획득일자<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>획득일자<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>3</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+        <!-- // data-tab="second" -->
+
+
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

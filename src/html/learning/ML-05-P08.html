@@ -1,0 +1,68 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+        <div class="ui base w700 modal">
+            <div class="header res">
+                승인자 설정
+                <span class="sub f12">본 과정의 승인요청 받을 리더 정보를 확인 후 필요 시 변경해 주시길 바랍니다.</span>
+            </div>
+            <div class="content">
+                <div class="scrolling-60vh">
+                    <div class="ml-05-p08-wrap">
+                        <table class="ui head-fix ml-05-p08 celled table">
+                            <thead>
+                                <tr>
+                                    <th>회사</th>
+                                    <th>부서</th>
+                                    <th>이름</th>
+                                    <th>직위/직책</th>
+                                    <th>이메일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="ellipsis">SK주식회사 C&C</span></td>
+                                    <td><span class="ellipsis">DW 서비스팀</span></td>
+                                    <td><span class="ellipsis">홍길동</span></td>
+                                    <td><span class="ellipsis">팀장/수석</span></td>
+                                    <td><span class="ellipsis">mysuni@mysuni.com</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="ui button w190 pop line">승인자 변경하기</button>
+                <button class="ui button w190 pop d">Cancel</button>
+                <button class="ui button w190 pop p">OK</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+$('.custom.button').each(function(){
+    var _this = $(this);
+    var _pop = $(this).next();
+    _this.popup({
+        position : 'bottom right',
+        popup : _pop,
+        inline :  true,
+    })
+})
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

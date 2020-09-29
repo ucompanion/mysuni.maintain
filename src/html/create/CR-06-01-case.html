@@ -1,0 +1,360 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="add-personal-learning support">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">Create</div>
+            <div class="apl-notice">나만의 지식/노하우를 공유 해볼까요?<br />승인자의 확인 후 mySUNI 정식콘텐츠로 등록됩니다</div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="apl-form-wrap create">
+            <form class="ui form">
+                <div class="section-tit">
+                    <span class="text1">기본정보 및 노출정보</span>
+                </div>
+                <div class="field">
+                    <label class="necessary">강좌명</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input">
+                            <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                            <input type="text" placeholder="강좌명을 입력해주세요. (최대 100자 입력 가능)" value="Mobile App UI UX GUI Design Tutorials(모바일 앱 UX UI GUI디자인 실무) Mobile App UI UX GUI Design Tutorial" />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">공개범위</label>
+                    <select class="ui dropdown w302">
+                        <option value="">선택해주세요.</option>
+                        <option value="a" selected>mySUNI</option>
+                        <option value="b">본인회사</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="necessary">College &gt; Channel</label>
+                    <select class="ui dropdown w302">
+                        <option value="">College 선택</option>
+                        <option value="a">혁신디자인</option>
+                    </select>
+                    <select class="ui dropdown w302 ml18">
+                        <option value="">Channel 선택</option>
+                        <option value="a">Deep Change와 Design</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <div class="ui grid create create2">
+                        <div class="column"><label>교육형태</label></div>
+                        <div class="column"><div class="text1">Video</div></div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Tag 정보</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input">
+                            <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                            <input type="text" placeholder="강좌명을 입력해주세요. (최대 100자 입력 가능)" value="UX, UI, 유엑스, 유아이, UX/UI, 유엑스유아이" />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui grid create create2">
+                        <div class="column"><label>icon</label></div>
+                        <div class="column">
+                            <div class="icon">
+                                <img src="../../img/group-26-copy-7.svg" alt="TBD" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="dividing" />
+                <div class="section-tit">
+                    <span class="text1">교육정보 및 부가정보</span>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육목표</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input">
+                            <span class="count"><span class="now">0</span>/<span class="max">500</span></span>
+                            <textarea placeholder="등록하는 강좌에 대한 교육목표를 입력해주세요. (최대 500자 입력 가능)"></textarea>
+							<span class="validation">최대 500자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육대상</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input">
+                            <span class="count"><span class="now">0</span>/<span class="max">500</span></span>
+                            <textarea placeholder="등록하는 강좌에 대한 교육대상을 입력해주세요. (최대 500자 입력가능)"></textarea>
+							<span class="validation">최대 500자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육내용</label>
+                    <div class="ui editor-wrap">
+                        <!--에디터영역 개발 시 삭제-->
+                        <div style="height:350px; background:#fff; color:#000; text-align:center; line-height:350px; font-size:35px; border:1px solid #7f7f7f; border-radius:4px;">에디터영역 / 개발 시 본 div 삭제</div>
+                        <!--//개발 시 삭제-->
+                    </div>
+                    <!--//ui editor-wrap-->
+                </div>
+                <div class="field">
+                    <label class="necessary">교육시간</label>
+                    <select class="ui dropdown w302">
+                        <option value="">선택해주세요.</option>
+                        <option value="1">1분</option>
+                        <option value="2">2분</option>
+                        <option value="3">3분</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <div class="ui grid create create2">
+                        <div class="column"><label>교육기관/출처</label></div>
+                        <div class="column"><div class="text1">구성원</div></div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui grid create create2">
+                        <div class="column"><label class="necessary">강사정보</label></div>
+                        <div class="column"><button class="ui button post teacher">강사등록</button></div>
+                    </div>
+                    <div class="teacher-list">
+                        <table>
+                            <tr>
+                                <td>
+                                    <button type="button" class="ui button img-icon"><i class="icon del-list24"></i><span class="blind">삭제</span></button>
+                                </td>
+                                <td>
+                                    <span class="ellipsis">일이삼사오육칠팔구</span>
+                                </td>
+                                <td class="belong">
+                                    <span>SK주식회사 C&C</span>
+                                    <span>DW 서비스 1팀</span>
+                                </td>
+                                <td class="time">
+                                    <span class="label">강의시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="5" />
+                                    </div>
+                                    <span class="h">시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="55" />
+                                    </div>
+                                    <span class="m">분</span>
+                                </td>
+                                <td class="time">
+                                    <span class="label">학습인정시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="5" />
+                                    </div>
+                                    <span class="h">시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="55" />
+                                    </div>
+                                    <span class="m">분</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="ui button img-icon"><i class="icon del-list24"></i><span class="blind">삭제</span></button>
+                                </td>
+                                <td>
+                                    <span class="ellipsis">신현정</span>
+                                </td>
+                                <td class="belong">
+                                    <span>SK주식회사 C&C</span>
+                                    <span>DW 서비스 1팀</span>
+                                </td>
+                                <td class="time">
+                                    <span class="label">강의시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="5" />
+                                    </div>
+                                    <span class="h">시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="55" />
+                                    </div>
+                                    <span class="m">분</span>
+                                </td>
+                                <td class="time">
+                                    <span class="label">학습인정시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="5" />
+                                    </div>
+                                    <span class="h">시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="55" />
+                                    </div>
+                                    <span class="m">분</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="ui button img-icon"><i class="icon del-list24"></i><span class="blind">삭제</span></button>
+                                </td>
+                                <td>
+                                    <span class="ellipsis">신현정</span>
+                                </td>
+                                <td class="belong">
+                                    <span>SK주식회사 C&C</span>
+                                    <span>DW 서비스 1팀</span>
+                                </td>
+                                <td class="time">
+                                    <span class="label">강의시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="5" />
+                                    </div>
+                                    <span class="h">시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="55" />
+                                    </div>
+                                    <span class="m">분</span>
+                                </td>
+                                <td class="time">
+                                    <span class="label">학습인정시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="5" />
+                                    </div>
+                                    <span class="h">시간</span>
+                                    <div class="ui h48 input">
+                                        <input type="text" value="55" />
+                                    </div>
+                                    <span class="m">분</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- 교육자료: 영상업로드 선택-->
+                <div class="field">
+                    <label class="necessary">교육자료</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden" checked>
+                        <label>영상 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>제작영상 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>영상링크</label>
+                    </div>
+                    <div class="ui form">
+                        <div class="ui input file">
+                            <input type="text" readonly placeholder="영상을 업로드해주세요." value="Education UX/UI class_1.avi" />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <label for="hidden-new-file" onclick="window.open('../create/CR-03-P01.html')" class="ui button">파일찾기</label>
+                            <input type="file" id="hidden-new-file">
+                        </div>
+                    </div>
+                    <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>개인이 가지고 있는 영상파일을 등록하실 수 있습니다.(.mp4, avi/ 500M 이하) / 등록 후 인코딩에 약 10분이상의 시간이 소요됩니다.</div>
+                </div>
+                <!-- //교육자료: 영상업로드 선택-->
+                <!-- 교육자료: 제작영상 업로드 선택-->
+                <div class="field">
+                    <label class="necessary">교육자료</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>영상 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden" checked>
+                        <label>제작영상 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>영상링크</label>
+                    </div>
+                    <div class="ui form">
+                        <div class="ui input file">
+                            <input type="text" readonly placeholder="제작 영상을 업로드해주세요." value="" />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <label for="hidden-new-file" onclick="window.open('../create/CR-03-P01.html')" class="ui button">파일찾기</label>
+                            <input type="file" id="hidden-new-file">
+                        </div>
+                    </div>
+                    <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>‘동영상 제작하기’를 통해 만든 영상파일을 등록합니다.</div>
+                </div>
+                <!--// 교육자료: 제작영상 업로드 선택-->
+                <!-- 교육자료: 영상링크 선택-->
+                <div class="field">
+                    <label class="necessary">교육자료</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>영상 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>제작영상 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r3" tabindex="0" class="hidden" checked>
+                        <label>영상링크</label>
+                    </div>
+                    <div class="ui form">
+                        <div class="ui input h48">
+                            <input type="text" name="" placeholder="http://">
+                        </div>
+                    </div>
+                    <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>YouTube와 같은 외부영상을 아웃링크 방식으로 등록합니다.</div>
+                </div>
+                <!-- //교육자료: 영상링크 선택-->
+                <div class="field">
+                    <label>참고자료</label>
+                    <div class="round-wrap2">
+                        <div class="top text">
+                            <ul>
+                                <!-- <li><span class="empty">파일을 업로드해주세요.</span></li> -->
+                                <li><span>Education UX/UI class_1.pptx</span><button><i class="clear icon"><span class="blind">delete</span></i></button></li>
+                                <li><span>Education UX/UI class_1.pptx</span><button><i class="clear icon"><span class="blind">delete</span></i></button></li>
+                                <li><span>Education UX/UI class_1.pptx</span><button><i class="clear icon"><span class="blind">delete</span></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <span class="text1"><i class="info16 icon"><span class="blind">infomation</span></i>파일 확장자가 exe를 제외한 모든 첨부파일을 등록하실 수 있습니다. / 1개 이상의 첨부파일을 등록하실 수 있습니다.</span>
+                            <div class="right-btn">
+                                <div class="ui input file2">
+                                    <label for="hidden-new-file2" class="ui button">파일찾기</label>
+                                    <input type="file" id="hidden-new-file2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">학습카드 공개여부</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="base"  tabindex="0" class="hidden">
+                        <label>공개</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="base" checked="checked" tabindex="0" class="hidden">
+                        <label>비공개</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="ui button fix line">목록</button>
+                    <button class="ui button fix line">삭제</button>
+                    <button class="ui button fix line">임시저장</button>
+                    <button class="ui button fix bg">승인요청</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

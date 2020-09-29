@@ -1,0 +1,89 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+        <form>
+            <div class="ui base w700 modal">
+                <div class="header res">
+                Report
+                </div>
+                <div class="content">
+                    <div class="scrolling-80vh">
+                        <div class="report-popup">
+                            <div class="h2">Report 작성</div>
+                            <table>
+                                <tr>
+                                    <th><span class="dot">Report명</span></th>
+                                    <td>
+                                        <p>Admin 내 등록되어 있는 Report명 노출</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="dot">주제</span></th>
+                                    <td>
+                                        <p>Admin 내 등록되어 있는 Report 내용 노출 펜데믹 현상에 대해 기술 하시오. 펜데믹 현상에 대해 기술 하시오.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="dot">작성</span></th>
+                                    <td>
+                                        <!--에디터영역 영역 사이즈: width:100%; height:180px 개발 시 아래 div 삭제 -->
+                                        <div style="width:100%; height:180px; border:1px solid #7f7f7f; border-radius:4px; box-sizing: border-box; color:red;">에디터영역, 개발 시 본 div 삭제</div>
+                                        <!--//에디터영역-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="dot">첨부파일</span></th>
+                                    <td>
+                                        <button class="ui icon left button icon-big-line2"><i class="icon download2"></i><span>Download File</span></button>
+                                        <div class="info-text"><i class="info16 icon"></i>과정담당자가 등록한 Report 양식을 Download 받으실 수 있습니다.</div>
+                                        <div class="add-file mt18">
+                                            <div class="ui input file">
+                                                <input type="text" placeholder="파일을 업로드해주세요." readonly />
+                                                <i aria-hidden="true" class="clear link icon"></i>
+                                                <label for="hidden-new-file" class="ui button">Upload</label>
+                                                <input type="file" id="hidden-new-file">
+                                            </div>
+                                        </div>
+                                        <div class="info-text"><i class="info16 icon"></i>작성된 Report를 Upload하시면 과정 담당자가 확인 후 의견을 드릴 예정입니다.</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="ui button w190 pop line">취소</button>
+                    <button class="ui button w190 pop line">저장</button>
+                    <button class="ui button w190 pop p">제출</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal({
+    autofocus: false,
+}).modal('show');
+$('.custom.button').each(function(){
+    var _this = $(this);
+    var _pop = $(this).next();
+    _this.popup({
+        position : 'bottom right',
+        popup : _pop,
+        inline :  true,
+    })
+})
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

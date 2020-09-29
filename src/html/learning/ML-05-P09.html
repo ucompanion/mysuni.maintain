@@ -1,0 +1,72 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+        <div class="ui base w1000 modal linkedin">
+            <div class="header">코세라 접속 시 학습 방법 안내</div>
+            <div class="content">
+                <div class="scrolling-80vh">
+                    <div class="content-wrap2">
+                        <div class="linkedin-cont coursera">
+                            <ul class="txt-box">
+                                <li>
+                                    <div class="text1">1. Coursera 과정 학습을 시작하면 Coursera로 넘어가게 됩니다. Coursera 로그인을 위해서는,</div>
+                                    <div class="text2">
+                                        ① Coursera Site 상단의 <span class="red">‘로그인’</span> 버튼 Click<br />
+                                        ② <span class="red">‘mySUNI로 로그인하기’</span> 버튼 Click<br />
+                                        ③ 신뢰할 수 있는 Site <span class="red">‘예’</span> 버튼 Click
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="text1">2. Coursera 계정이 없는 경우, ‘신규 Coursera 사용자’ 버튼을 선택 후 로그인을 하면됩니다.</div>
+                                </li>
+                                <li>
+                                    <div class="text1">3. 기존에 개인이 보유하고 있는 ‘Coursera계정’과 ‘mySUNI 계정’을 연결하여 학습하고 싶은 경우, ‘신규 Coursera 사용자’버튼을 선택하여 로그인 하면 됩니다.</div>
+                                    <div class="text2">기존 계정’이 “sk.com”인 경우 :  ‘기존 Coursera 사용자임’ 버튼 선택 (기존 Coursera 비밀번호와 동일)</div>
+                                </li>
+                            </ul>
+                            <div class="img">
+                                <img src="../../img/img-coursera.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions4">
+                <div class="left">
+                    <div class="ui base checkbox">
+                        <input type="checkbox" class="hidden" tabindex="0">
+                        <label>오늘 하루 보지 않기</label>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="ui button close">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+if(!ui.fXGetCookie('linkedin')){ 
+    $('.ui.modal.linkedin').modal('show');
+}
+$('.linkedin .actions4 .right button').bind('click', function(){
+    if($('.linkedin .actions4 .left .ui.base.checkbox input[type=checkbox]').prop('checked')){ // 오늘 하루 보지 않기 클릭시
+        ui.fXSetCookie('linkedin', true, 1);
+    }
+    $('.ui.modal.linkedin').modal('hide');
+})
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

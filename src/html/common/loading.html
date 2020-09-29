@@ -1,0 +1,25 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div style="height:300px;text-align:center;line-height:300px;background:green;color:#fff;">영역 확인</div>
+    <div class="ui full segment">
+        <div style="height:2500px;">content...</div>
+    </div>
+</section>
+<!-- // .content -->
+<script>
+// 로딩바 보이기
+ui.fxLoader(true);
+// 로딩바 숨기기
+// ui.fxLoader(false);
+</script>
+<!-- // .loader -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

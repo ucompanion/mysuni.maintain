@@ -1,0 +1,36 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content no-padding">
+
+    <!--팝업-->
+    <div class="ui base w380 modal">
+        <div class="header">
+            도전 취소 알림
+        </div>
+        <div class="content">
+            <div class="content-wrap6">
+                <div class="badge-p02">
+                    <div class="tt">Badge획득 도전을 취소하시겠습니까?</div>
+                    학습 완료 내역은 재도전시, <br />다시 학습 하실 필요가 없습니다.
+                </div>
+            </div>
+        </div>
+        <div class="actions2">
+            <button class="ui button pop2 p">확인</button>
+        </div>
+    </div>
+
+</section>
+<!-- // .content -->
+<script>
+$('.ui.modal').modal('show');
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

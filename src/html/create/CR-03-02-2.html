@@ -1,0 +1,218 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="add-personal-learning support">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">Create</div>
+            <div class="apl-notice">내가 갖고 있는 지식을 강좌로 만들 수 있습니다.<br />관리자의 확인 절차를 거쳐 다른 mySUNI 사용자에게 전파해보세요.</div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="apl-form-wrap create">
+            <form class="ui form">
+                <div class="section-tit">
+                    <span class="text1">교육정보</span>
+                    <div class="right-step">
+                        <div class="ui steps number-step">
+                            <div class="completed step"><!-- .active .completed // -->
+                                <span class="number"><span class="blind">1</span></span>
+                                <span class="title">기본정보 및 노출정보</span>
+                            </div>
+                            <div class="active step"><!-- .active .completed // -->
+                                <span class="number"><span class="blind">2</span></span>
+                                <span class="title">교육정보 및 부가정보</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육목표</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">500</span></span>
+                            <textarea placeholder="교육 목표를 입력해주세요. (최대 500자 입력 가능)"></textarea>
+							<span class="validation">최대 500자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육대상</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">500</span></span>
+                            <textarea placeholder="교육 대상을 입력해주세요. (최대 500자 입력가능)"></textarea>
+							<span class="validation">최대 500자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육내용</label>
+                    <div class="ui editor-wrap">
+                        <!--에디터영역 개발 시 삭제-->
+                        <div style="height:350px; background:#fff; color:#000; text-align:center; line-height:350px; font-size:35px; border:1px solid #7f7f7f; border-radius:4px;">temp 에디터영역 / 개발 시 본 div 삭제</div>
+                        <!--//개발 시 삭제-->
+                    </div>
+                     <!--//ui editor-wrap-->
+                </div>
+                <div class="field">
+                    <label>이수조건</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">1000</span></span>
+                            <textarea placeholder="이수조건을 입력해주세요."></textarea>
+                            <span class="validation">최대 1000자 까지 입력 가능합니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>기타안내</label>
+                    <div class="ui editor-wrap">
+                        <!--에디터영역 개발 시 삭제-->
+                        <div style="height:350px; background:#fff; color:#000; text-align:center; line-height:350px; font-size:35px; border:1px solid #7f7f7f; border-radius:4px;">temp 에디터영역 / 개발 시 본 div 삭제</div>
+                        <!--//개발 시 삭제-->
+                    </div>
+                     <!--//ui editor-wrap-->
+                </div>
+
+
+
+                <div class="field">
+                    <div class="ui grid create">
+                        <div class="column">
+                            <label class="necessary">교육시간</label>
+                            <div class="ui h48 input time">
+                                <input type="text" /><label>h</label>
+                            </div>
+                            <div class="ui h48 input time">
+                                <input type="text" /><label>m</label>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <label>난이도</label>
+                            <select class="ui dropdown">
+                                <option value="">선택해주세요.</option>
+                                <option value="a">Basic</option>
+                                <option value="b">Intermediate</option>
+                                <option value="c">Advanced</option>
+                                <option value="d">Expert</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="necessary">교육기관 / 출처</label>
+                    <div class="ui grid create">
+                        <div class="column">
+                            <select class="ui dropdown w100">
+                                <option value="">선택해주세요.</option>
+                                <option value="a">교육기관1</option>
+                                <option value="b">교육기관2</option>
+                                <option value="c">교육기관3</option>
+                                <option value="d">교육기관4</option>
+                                <option value="e">직접입력</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <div class="ui h48 input">
+                                <input type="text" name="" placeholder="직접입력 선택 시 활성화 됩니다." readonly >
+                                <i aria-hidden="true" class="clear link icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <hr class="dividing" />
+
+                <div class="section-tit">
+                    <span class="text1">부가정보</span>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육자료</label>
+                    <div class="ui base radio checkbox" onclick="window.open('../create/CR-03-02.html')">
+                        <input type="radio" name="r3" tabindex="0" class="hidden">
+                        <label>오디오 파일 업로드</label>
+                    </div>
+                    <div class="ui base radio checkbox" onclick="window.open('../create/CR-03-02-2.html')">
+                        <input type="radio" name="r3" checked="checked" tabindex="0" class="hidden">
+                        <label>오디오 파일 링크</label>
+                    </div>
+                    <div class="ui form">
+                        <div class="ui input h48">
+                            <input type="text" name="" placeholder="http://">
+                        </div>
+                    </div>
+                    <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>교육자료로 제공될 파일을 등록하실 수 있습니다. / 최대 000 Byte 용량의 파일을 등록하실 수 있습니다.</div>
+                </div>
+
+
+                <div class="field">
+                    <label>참고자료</label>
+                    <div class="round-wrap2">
+                        <div class="top text">
+                            <ul>
+                                <li><span class="empty">파일을 업로드해주세요.</span></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <span class="text1"><i class="info16 icon"><span class="blind">infomation</span></i>DOC, PPT, PDF, XLS 파일을 등록하실 수 있습니다. / 최대 000 Byte 용량의 파일을 등록하실 수 있습니다. / 참고자료는 다수의 파일을 등록할 수 있습니다.</span>
+                            <div class="right-btn">
+                                <div class="ui input file2">
+                                    <label for="hidden-new-file" class="ui button">파일찾기</label>
+                                    <input type="file" id="hidden-new-file2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="field">
+                    <label class="necessary">학습카드 공개여부</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r2" tabindex="0" class="hidden">
+                        <label>공개</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="r2" checked="checked" tabindex="0" class="hidden">
+                        <label>비공개</label>
+                    </div>
+                </div>
+
+                <!-- Create 버튼 클릭으로 상세 진입 시 -->
+                <div class="buttons">
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Cancel</button>
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Save</button>
+                    <button onclick="window.open('../create/CR-02-01.html')" class="ui button fix line">Previous</button>
+                    <button onclick="window.open('../create/CR-01-02.html')"class="ui button fix bg">Shared</button>
+                </div>
+                <!-- Create 버튼 클릭으로 상세 진입 시 -->
+                <!-- List 영역에서 저장 상태인 View page > Modify 버튼 클릭 후 항목 상세 진입 시 -->
+                <br /><!-- // 케이스간 간격 확보용 개발시 삭제 -->
+                <div class="buttons">
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Delete</button>
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Cancel</button>
+                    <button onclick="window.open('../create/CR-02-01.html')" class="ui button fix line">Save</button>
+                    <button onclick="window.open('../create/CR-02-01.html')" class="ui button fix line">Previous</button>
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix bg">Next</button>
+                </div>
+                <!-- // List 영역에서 저장 상태인 View page > Modify 버튼 클릭 후 항목 상세 진입 시 -->
+            </form>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

@@ -1,0 +1,166 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <!-- .add-personal-learning -->
+    <div class="add-personal-learning">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">개인학습</div>
+            <div class="apl-notice">‘mySUNI / 각 사 교육’ 외 개인적으로 학습하였을 경우, <br />승인권자의 확인 후 학습시간으로 등록 할 수 있습니다.</div>
+        </div>
+    </div>
+    <!-- // .add-personal-learning -->
+    <div class="ui full segment">
+        <div class="apl-form-wrap">
+            <form class="ui form">
+                <div class="field">
+                    <label class="necessary">교육명</label>
+                    <div class="ui right-top-count input"><!-- .error // -->
+                        <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                        <input type="text" placeholder="강좌명을 입력해주세요." />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육형태</label>
+                    <div class="edu-wrap">
+                        <select class="ui dropdown w302">
+                            <option value="">Select</option>
+                            <option value="Classroom">Classroom</option>
+                            <option value="e-Learning">e-Learning</option>
+                            <option value="Video">Video</option>
+                            <option value="Audio">Audio</option>
+                            <option value="Webpage">Webpage</option>
+                            <option value="Experiential">Experiential</option>
+                            <option value="Document">Document</option>
+                            <option value="Community">Community</option>
+                            <option value="기타-직접입력" selected>기타-직접입력</option>
+                        </select>
+                        <div class="w878">
+                            <div class="ui h48 input ml18">
+                                <input type="text" placeholder="기타 교육형태를 입력해주세요." />
+                                <i aria-hidden="true" class="clear link icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">Channel</label>
+                    <select class="ui dropdown w302">
+                        <option value="">Select</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육기간</label>
+                    <div class="calendar-wrap">
+                        <div class="ui calendar" id="rangestart">
+                            <div class="ui input right icon">
+                                <label>시작일</label>
+                                <i class="calendar24 icon"><span class="blind">date</span></i>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <span class="dash">-</span>
+                        <div class="ui calendar" id="rangeend">
+                            <div class="ui input right icon">
+                                <label>종료일</label>
+                                <i class="calendar24 icon"><span class="blind">date</span></i>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>일일 강좌 등록 시 시작일과 종료일의 날짜를 동일하게 설정해 주시기 바랍니다.</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">교육기관</label>
+                    <div class="ui right-top-count input"><!-- .error // -->
+                        <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                        <input type="text" placeholder="교육을 수료한 기관명을 입력해주세요." />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label class="necessary">교육시간</label>
+                    <div class="time-wrap">
+                        <div class="time">
+                            <div class="ui h48 input time">
+                                <input type="text" /><label>시간</label>
+                                <i aria-hidden="true" class="clear link icon"></i>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <div class="ui h48 input time">
+                                <input type="text" /><label>분</label>
+                                <i aria-hidden="true" class="clear link icon"></i>
+                            </div>
+                        </div>
+                        <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>학습시간으로 인정되는 교육시간을 입력해주세요. / 승인자에 의해 교육시간은 변경될 수 있습니다.</div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="necessary">교육내용</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input">
+                            <span class="count"><span class="now">0</span>/<span class="max">1000</span></span>
+                            <textarea placeholder="교육내용을 1,000자 이내로 입력해주세요."></textarea>
+							<span class="validation">최대 1000자 까지 입력 가능합니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>첨부파일</label>
+                    <div class="round-wrap2">
+                        <div class="top text">
+                            <ul>
+                                <!-- <li><span class="empty">파일을 업로드해주세요.</span></li> -->
+                                <li><span>Education UX/UI class_1.pptx</span><button><i class="clear icon"><span class="blind">delete</span></i></button></li>
+                                <li><span>Education UX/UI class_1.pptx</span><button><i class="clear icon"><span class="blind">delete</span></i></button></li>
+                                <li><span>Education UX/UI class_1.pptx</span><button><i class="clear icon"><span class="blind">delete</span></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <span class="text1"><i class="info16 icon"><span class="blind">infomation</span></i>파일 확장자가 exe를 제외한 모든 첨부파일을 등록하실 수 있습니다. / 1개 이상의 첨부파일을 등록하실 수 있습니다.</span>
+                            <div class="right-btn">
+                                <div class="ui input file2">
+                                    <label for="hidden-new-file2" class="ui button">파일찾기</label>
+                                    <input type="file" id="hidden-new-file2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui grid create create2">
+                        <div class="column"><label>승인자</label></div>
+                        <div class="column">
+                            <button class="ui button post change-admin" type="button"><span>승인자 변경</span></button>
+                            <span class="text1"><b>이의연</b><span class="ml40">SKI</span><span class="line">LMS</span></button>
+                            <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>본인 조직의 리더가 아닐 경우 [승인자변경]을 눌러 수정 해주세요. </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="ui button fix line">취소</button>
+                    <button class="ui button fix bg">승인요청</button>
+                </div>
+            </form>
+        </div>
+	</div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

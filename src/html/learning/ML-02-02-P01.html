@@ -1,0 +1,37 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+        <div class="ui base w380 modal">
+            <div class="header">
+                리스트 숨김 안내
+            </div>
+            <div class="content">
+                <div class="list-hide-guide">
+                    <p>선택하신 항목들은 학습 중 리스트에서 삭제되지만 삭제된 학습을 다시 진행하게 되면 리스트에 다시 노출 됩니다.<br /><br /><strong>리스트를 숨김 처리 하시겠습니까?</strong></p>
+                </div>
+            </div>
+            <div class="actions2">
+                <button class="ui button pop2 d">아니요</button>
+                <button class="ui button pop2 p">예</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+ui.fxImageUploadPreview($('#profileImage'), $('#blah'));
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

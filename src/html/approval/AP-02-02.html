@@ -1,0 +1,112 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+     <div class="ap-title border">
+        <div class="inner">
+            <div class="txt1">개인학습</div>
+            <div class="txt2">구성원이 입력한 개인학습 정보에 대해 확인하실 수 있습니다.<br />입력된 내용을 잘 확인해주세요.</div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="apl-form-wrap create">
+            <form class="ui form">
+                <div class="section-tit">
+                    <span class="text1">승인정보</span>
+                </div>
+                <div class="create-detail type-apl">
+                    <dl>
+                        <dt>생성자 및 등록일자</dt>
+                        <dd><span>김써니</span><span class="l">2020.05.29 23:59</span></dd>
+                    </dl>
+                    <dl>
+                        <dt>처리상태</dt>
+                        <dd><span class="blue"><b>승인</b></span><span class="l">2020.05.29 23:59</span></dd>
+                    </dl>
+                </div>
+                <div class="section-tit">
+                    <span class="text1">교육정보</span>
+                </div>
+                <table class="ui create table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">교육명</th>
+                            <td><div>모든 구성원들의 한단계 발전을 위해</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">교육형태</th>
+                            <td><div>기타-직접입력 &gt; On-Line Video 특강</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Channel</th>
+                            <td><div>AI</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">교육기간</th>
+                            <td><div>2020.05.29~2020.06.29</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">교육기관</th>
+                            <td><div>Youtube & Facebook</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">교육시간</th>
+                            <td>
+                                <div class="time-wrap">
+                                    <div class="time">
+                                        <div class="ui h48 input time">
+                                            <input type="text" value="5" /><label>시간</label>
+                                            <i aria-hidden="true" class="clear link icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="time">
+                                        <div class="ui h48 input time">
+                                            <input type="text" value="5" /><label>분</label>
+                                            <i aria-hidden="true" class="clear link icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>학습시간으로 인정되는 교육시간을 입력해주세요. / 승인자에 의해 교육시간은 변경될 수 있습니다.</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">교육내용</th>
+                            <td>
+                                <div>
+                                    Youtube를 보면서 “AI와 Block chain과의 상관관계는 어떻게 되는가?”라는 주제로 학습을 하였습니다. 
+                                    Facebook에서도 비슷한 강의가 있어서 함께 들어봤는데 의외로 나쁘지 않았어요
+                                    3시간 정도 들었는데 2시간만 교육시간으로 인정해주세요.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">첨부파일</th>
+                            <td>
+                                <div><a href="#">Education UX/UI class_1.avi</a></div>
+                                <div><a href="#">Education UX/UI class_1.avi</a></div>
+                                <div><a href="#">Education UX/UI class_1.avi</a></div>
+                                <div><a href="#">Education UX/UI class_1.avi</a></div>
+                                <div><a href="#">Education UX/UI class_1.avi</a></div>
+                                <div><a href="#">Education UX/UI class_1.avi</a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons editor">
+                    <button type="button" class="ui button fix line">List</button>
+                    <button type="button" class="ui button fix line">반려</button>
+                    <button type="button" class="ui button fix bg">승인</button>
+                </div>
+            </form>
+        </div>
+    </>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

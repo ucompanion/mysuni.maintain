@@ -1,0 +1,112 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w1000 modal">
+            <div class="header res">
+                관심 Channel 변경
+                <span class="sub f12">맞춤형 학습 과정 추천을 위한 관심 채널을 3개 이상 선택해주세요.</span>
+            </div>
+            <div class="content">
+
+                <div class="channel-change">
+
+                    <div class="table-css">
+                        <div class="row head">
+                            <div class="cell v-middle">
+                                <span class="text01">Channel list</span>
+                                <div class="right">
+                                    <div class="ui h30 search input">
+                                        <input type="text" placeholder="Search" value="검색어" />
+                                        <i aria-hidden="true" class="clear link icon"></i>
+                                        <i aria-hidden="true" class="search link icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell v-middle">
+                                <span class="text01">Selected</span>
+                                <!-- 선택갯수 0 개 일때 -->
+                                <span class="count"><span class="text01">0</span><span class="text02"> / 80</span></span>
+                                <!-- // 선택갯수 0 개 일때 -->
+                                <!-- 선택갯수 0 이 아닐때 -->
+                                <!--
+                                <span class="count"><span class="text01 add">7</span><span class="text02"> / 80</span></span>
+                                -->
+                                <!-- // 선택갯수 0 이 아닐때 -->
+                                <div class="right">
+                                    <button class="clear"><i class="icon reset"><span class="blind">reset</span></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell vtop">
+                                <div class="select-area">
+                                    <div class="scrolling-60vh">
+                                        <!-- .search-empty -->
+                                        <div class="search-empty">
+                                            <i class="icon no-contents50"></i>
+                                            <div>검색된 Channel이 없습니다.</div>
+                                        </div>
+                                        <!-- // .search-empty -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell vtop">
+                                <div class="select-area">
+                                    <div class="scrolling-60vh">
+                                        <!-- .select-empty -->
+                                        <div class="select-empty">
+                                            Not Selected
+                                        </div>
+                                        <!-- // .select-empty -->
+                                        <!-- .select-item -->
+                                        <!--
+                                        <div class="select-item">
+                                            <button class="ui button del">Cloud Developing</button>
+                                            <button class="ui button del">Cloud Developing</button>
+                                            <button class="ui button del">Cloud Developing</button>
+                                            <button class="ui button del">Cloud Developing</button>
+                                            <button class="ui button del">Cloud Developing</button>
+                                            <button class="ui button del">Cloud Developing</button>
+                                            <button class="ui button del">Cloud Developing</button>
+                                        </div>
+                                        -->
+                                        <!-- // .select-item -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                
+                <button class="ui icon button img-icon"><i class="arrow-up s26 icon"></i><span class="blind">open</span></button>
+				<button class="ui icon button img-icon"><i class="arrow-down s26 icon"></i><span class="blind">close</span></button>
+                
+-->
+
+            </div>
+            <div class="actions">
+                <button class="ui button w190 pop d">Cancel</button>
+                <button class="ui button w190 pop p">Confirm</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

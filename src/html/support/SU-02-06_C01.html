@@ -1,0 +1,91 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="add-personal-learning support">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">Edit FAQ</div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="apl-form-wrap support">
+            <form class="ui form">
+                <div class="field">
+                    <label>제목</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                            <input type="text" placeholder="제목을 입력해주세요." value="SK그룹이 구성원들의 딥체인지 역량을 키워나갈 교육·연구 통합 플랫폼인 'SUNI'를 출범시킨다." />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>FAQ 카테고리</label>
+                    <select class="ui selection dropdown">
+                        <option value="">Select</option>
+                        <option value="a">학습문의</option>
+                        <option value="b">이수시간</option>
+                        <option value="c">회원정보</option>
+                        <option value="d">결제,환불</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>FAQ 구분</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="base" checked="checked" tabindex="0" class="hidden">
+                        <label>중요 상단 FAQ</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="base" tabindex="0" class="hidden">
+                        <label>일반</label>
+                    </div>
+                </div>
+                <!--
+                <div class="field">
+                    <label>주요 노출 기간 설정</label>
+                    <div class="ui calendar" id="rangestart">
+                        <div class="ui input right icon">
+                            <label>시작일</label>
+                            <i class="calendar24 icon"><span class="blind">date</span></i>
+                            <input type="text" value="11.25.19">
+                        </div>
+                    </div>
+                    <span class="dash">-</span>
+                    <div class="ui calendar" id="rangeend">
+                        <div class="ui input right icon">
+                            <label>종료일</label>
+                            <i class="calendar24 icon"><span class="blind">date</span></i>
+                            <input type="text" value="11.25.19">
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div class="field">
+                    <label>본문</label>
+                    <div class="ui editor-wrap">
+                        <!--에디터영역 개발 시 삭제-->
+                        <div style="height:350px; background:#fff; color:#000; text-align:center; line-height:350px; font-size:35px; border:1px solid #7f7f7f; border-radius:4px;">temp 에디터영역 / 개발 시 본 div 삭제</div>
+                        <!--//개발 시 삭제-->
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="ui button fix line" onclick="window.open('../support/SU-02-02.html')">Cancel</button>
+                    <button class="ui button fix bg">Edit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

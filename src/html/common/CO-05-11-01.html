@@ -1,0 +1,566 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content channel">
+    <div class="main-info-area">
+        <div class="progress-info-wrap">
+            <div class="cell thumb">
+                <div><i class="icon college-skacademy86"><span class="blind">SK아카데미 College</span></i></div>
+            </div>
+            <div class="cell title">
+                <h2 class="college-name">SK아카데미 College</h2>
+                <p><em>“나무를 키우듯, 인재를 키워온 SK인재육성의 산실”</em>SK아카데미는 SKM5/Values 전파를 통해 SK 기업문화의 토대를 강화하고, <br />체계적인 육성 Pipeline에 따라 미래 경영자와 Biz. 전문가를 육성합니다</p>
+            </div>
+            <div class="cell btn-wrap">
+                <button onclick="window.open('../introduction/IN-02-01.html')" class="ui button personal line">
+                    <span>mySUNI 전체 커리큘럼 보기</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="college-detail">
+            <div class="cont-wrap">
+                <div class="section-top">
+                    <div class="section-count">
+                        <b>‘SK아카데미 College’</b> 에 총 <b>111개</b>의 학습 과정이 있습니다.
+                    </div>
+                    <div class="comments-sort">
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="radio" checked="checked" tabindex="0" class="hidden">
+                            <label>최신순</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="radio" tabindex="0" class="hidden">
+                            <label>인기순</label>
+                        </div>
+                        <button type="button" class="btn-filter-blue"><span>Filter(05)</span></button>
+                    </div>
+                </div>
+                <!--filter-->
+                <div class="filter-table">
+                    <div class="title">Filter</div>
+                    <table>
+                        <tr class="ch">
+                            <th>Channel</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>AI Fundamental(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>AI Tech Essential(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>AI Biz. Implementation(20)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>AI/DT Literacy(04)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Computer Vision AI(16)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Speech AI(20)</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육유형</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Course(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Video(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Audio(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>e-Learning(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Classroom(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Community(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Web Page(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Documents(13)</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>난이도</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Basic</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Intermediate</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Advanced</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Expert</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육기관</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>mySUNI</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Coursera</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Linkedin</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>핵인싸</th>
+                            <td>
+                                <div class="ui base radio checkbox">
+                                    <input type="radio" name="insa" checked="checked" class="hidden" tabindex="0">
+                                    <label>선택안함</label>
+                                </div>
+                                <div class="ui base radio checkbox">
+                                    <input type="radio" name="insa" class="hidden" tabindex="0">
+                                    <label>유</label>
+                                </div>
+                                <div class="ui base radio checkbox">
+                                    <input type="radio" name="insa" class="hidden" tabindex="0">
+                                    <label>무</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="selected">
+                        <table>
+                            <tr>
+                                <th><button class="clear"><i class="icon reset"><span class="blind">reset</span></i></button><span>전체해제</span></th>
+                                <td>
+                                    <button class="ui button del">AI</button>
+                                    <button class="ui button del">e-Learning</button>
+                                    <button class="ui button del">Intermediate</button>
+                                    <button class="ui button del">mySUNI</button>
+                                    <button class="ui button del">Coursera</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="ui cards box-cards">
+                        <!--Required 상태카드-->
+                        <div class="ui card card-h">
+                            <!--tag-->
+                            <div class="card-ribbon-wrap">
+                                <div class="ui ribbon2 label">핵인싸과정</div>
+                            </div>
+                            <!--//tag-->
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Mobile App UI/UX GUI Design Tutorials (모바일 앱 UX UI GUI)</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="video2 icon"></i><span>Video</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                    <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Mobile App UI/UX GUI Design Tutorials (모바일 앱 UX UI GUI)</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Stamp 상태카드-->
+                        <div class="ui card card-h">
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                        <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="fixed-rating s2">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui card card-h">
+                            <div class="card-ribbon-wrap">
+                                <div class="ui ribbon2 label">핵인싸과정</div>
+                            </div>
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="video2 icon"></i><span>Video</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                        <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                    <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Required 상태값 + label -->
+                        <div class="ui card card-h">
+                            <div class="card-ribbon-wrap">
+                                <div class="ui ribbon2 label">핵인싸과정</div>
+                            </div>
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                    <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Required 상태카드-->
+                        <div class="ui card card-h">
+                            <!--tag-->
+                            <div class="card-ribbon-wrap">
+                                <div class="ui ribbon2 label">핵인싸과정</div>
+                            </div>
+                            <!--//tag-->
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Mobile App UI/UX GUI Design Tutorials (모바일 앱 UX UI GUI)</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="video2 icon"></i><span>Video</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                    <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Mobile App UI/UX GUI Design Tutorials (모바일 앱 UX UI GUI)</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Stamp 상태카드-->
+                        <div class="ui card card-h">
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                        <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="fixed-rating s2">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui card card-h">
+                            <div class="card-ribbon-wrap">
+                                <div class="ui ribbon2 label">핵인싸과정</div>
+                            </div>
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="video2 icon"></i><span>Video</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                        <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                    <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Required 상태값 + label -->
+                        <div class="ui card card-h">
+                            <div class="card-ribbon-wrap">
+                                <div class="ui ribbon2 label">핵인싸과정</div>
+                            </div>
+                            <div class="card-inner">
+                                <!--썸네일-->
+                                <div class="thumbnail"></div>
+                                <!--//썸네일-->
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                </div>
+                                <div class="icon-area">
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                    </div>
+                                    <div class="li">
+                                        <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                    </div>
+                                </div>
+                                <div class="foot-area">
+                                    <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                    <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="title-area">
+                                    <div class="ui color orange2 label">SK아카데미</div>
+                                    <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                </div>
+                                <p class="text-area">
+                                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                </p>
+                                <div class="btn-area">
+                                    <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                    <button class="ui button fix bg">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="more-comments">
+                        <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

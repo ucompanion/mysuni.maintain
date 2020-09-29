@@ -1,0 +1,43 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w700 modal">
+            <div class="header">선택된 결제 반려</div>
+            <form class="ui base form">
+                <div class="content">
+                    <div class="scrolling-80vh">
+                        <div class="content-wrap6">
+                            <div class="my-03-01-pop">
+                                <div class="text1">선택된 항목에 대한 결제를 반려하시겠습니까?</div>
+                                <div class="text2">작성하신 의견은 결제가 반려되는 신청자에게 동일하게 전송됩니다.</div>
+                                <textarea placeholder="의견을 기재해주세요."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions2">
+                    <button class="ui button pop2 d">취소</button>
+                    <button class="ui button pop2 p">반려</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

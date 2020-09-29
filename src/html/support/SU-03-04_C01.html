@@ -1,0 +1,73 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="add-personal-learning support">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">Ask a Question</div>
+            <div class="apl-notice">현재 1:1 문의 답변에 평균 7일 ~ 14일 정도 소요될 수 있으며, 확인이 필요한 문의의 경우 20일 이상 지연될 수 있습니다.<br />신속하게 답변드릴 수 있도록 최선을 다하겠습니다. 기본적인 문의의 경우 FAQ를 통해 관련 내용을 확인하실 수 있으니 참고 부탁드립니다.</div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="apl-form-wrap support">
+            <form class="ui form">
+                <div class="field">
+                    <label>제목</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                            <input type="text" placeholder="제목을 입력해주세요." />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>문의유형</label>
+                    <select class="ui selection dropdown">
+                        <option value="a">학습 Rule</option>
+                        <option value="b">Contents</option>
+                        <option value="c">System</option>
+                        <option value="d">College</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>내용</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">1000</span></span>
+                            <textarea placeholder="1000자 이내로 입력하세요."></textarea>
+                            <span class="validation">최대 1000자까지 입력 가능합니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>첨부파일</label>
+                    <div class="ui form">
+                        <div class="ui input file">
+                            <input type="text" readonly placeholder="문서 및 이미지 파일을 업로드 가능합니다." />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <label for="hidden-new-file" class="ui button">파일찾기</label>
+                            <input type="file" id="hidden-new-file">
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="ui button fix line" onclick="window.open('../support/SU-03-01.html')">Close</button>
+                    <button class="ui button fix bg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

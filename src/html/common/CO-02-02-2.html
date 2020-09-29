@@ -1,0 +1,80 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+    <div class="ui tab-menu2 offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku2 menu">
+                <a class="active item" data-tab="first">mySUNI 소개</a>
+                <a class="item" data-tab="second">College 소개</a>
+                <a class="item" data-tab="third">Certification 소개</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- SUNI -->
+    <div class="ui attached tab active" data-tab="first">
+        SUNI <div style="height:5000px;"></div>
+    </div>
+    <!-- // SUNI -->
+    <!-- Colleges -->
+    <div class="ui attached tab" data-tab="second">
+        Colleges
+        <div class="ui tab-menu-inner">
+            <div class="cont-inner">
+                <div class="ui sku3 menu">
+                    <a class="active item" data-tab="colleges1">AI</a>
+                    <a class="item" data-tab="colleges2">DT</a>
+                    <a class="item" data-tab="colleges3">행복</a>
+                    <a class="item" data-tab="colleges4">SV</a>
+                    <a class="item" data-tab="colleges5">혁신디자인</a>
+                    <a class="item" data-tab="colleges6">Global</a>
+                    <a class="item" data-tab="colleges7">Leadership</a>
+                    <a class="item" data-tab="colleges8">Management</a>
+                </div>
+            </div>
+        </div>
+        <div class="ui attached tab active" data-tab="colleges1">
+            AI
+        </div>
+        <div class="ui attached tab" data-tab="colleges2">
+            DT
+        </div>
+        <div class="ui attached tab" data-tab="colleges3">
+            행복
+        </div>
+        <div class="ui attached tab" data-tab="colleges4">
+            SV
+        </div>
+        <div class="ui attached tab" data-tab="colleges5">
+            혁신디자인
+        </div>
+        <div class="ui attached tab" data-tab="colleges6">
+            Global
+        </div>
+        <div class="ui attached tab" data-tab="colleges7">
+            Leadership
+        </div>
+        <div class="ui attached tab" data-tab="colleges8">
+            Management
+        </div>
+    </div>
+    <!-- // Colleges -->
+    <!-- Certification -->
+    <div class="ui attached tab" data-tab="third">
+        Certification
+    </div>
+    <!-- // Certification -->
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

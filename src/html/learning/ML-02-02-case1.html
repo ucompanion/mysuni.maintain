@@ -1,0 +1,338 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+    <div class="main-info-area">
+        <div class="progress-info-wrap mypage">
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="../../img/profile-56-px.png" alt="프로필사진 임시이미지" />
+                        </div>
+                        <button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P01.html')"><i aria-hidden="true" class="photo-edit icon"></i></button>
+                    </div>
+                    <div class="text-info">
+                        <div class="name">
+                            김유니
+                        </div>
+                        <div class="part">
+                            <span>SK C&C</span><br /><span>플랫폼 개발 1팀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <!--학습대기중일 때 페이지 이동 링크가 달라지는 점 유의*-->
+                    <div class="ui statistic total-time">
+                        <button class="button btn-total-time" onclick="window.open('../recommend/RC-01-01.html')">
+                            <span class="ui label onlytext"><i aria-hidden="true" class="total-time icon"></i><span>총 학습시간</span></span>
+                            <span class="value2">
+                                <span class="wating">학습대기중</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../certification/CT-03-01.html" target="_blank">
+                                <span><span class="text1">My Badge</span></span>
+                                <span><i class="icon badge35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../mypage/MY-02-01.html" target="blank">
+                                <span><span class="text1">My Stamp</span></span>
+                                <span><i class="icon stamp35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                        <div class="year">
+                            <div class="ui inline dropdown tight">
+                                <div class="text">2019</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">2019</div>
+                                    <div class="item">2018</div>
+                                    <div class="item">2017</div>
+                                    <div class="item">2016</div>
+                                    <div class="item">2015</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="active item" data-tab="first">학습중</a>
+                <a class="item" data-tab="second">관심목록</a>
+                <a class="item division" data-tab="third">권장과정</a>
+                <a class="item" data-tab="fourth">학습예정</a>
+                <a class="item" data-tab="fifth">mySUNI 학습완료</a>
+                <a class="item" data-tab="sixth">개인학습 완료</a>
+                <a class="item" data-tab="seventh">취소/미이수</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="ui tab active" data-tab="first">
+            <div class="top-guide-title">
+                <div class="right-wrap">
+                    <button type="button" class="btn-filter-blue"><span>Filter(05)</span></button>
+                </div>
+            </div>
+            <div class="filter-table">
+                <div class="title">Filter</div>
+                <table>
+                    <tr>
+                        <th>컬리지</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>Al(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>DT(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>행복(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>SV(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>혁신디자인(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Global(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Leadership(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Management(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>반도체(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>에너지솔루션(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>SK경영(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>SK아카데미(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Life Style(13)</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>교육유형</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Course(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Video(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Audio(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>e-Learning(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Classroom(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Community(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Web Page(13)</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Documents(13)</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>난이도</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Basic</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>Intermediate</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Advanced</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Expert</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>교육기관</th>
+                        <td>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Select All</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>mySUNI</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                <label>Coursera</label>
+                            </div>
+                            <div class="ui base checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>Linkedin</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>핵인싸</th>
+                        <td>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="insa" checked="checked" class="hidden" tabindex="0">
+                                <label>선택안함</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="insa" class="hidden" tabindex="0">
+                                <label>유</label>
+                            </div>
+                            <div class="ui base radio checkbox">
+                                <input type="radio" name="insa" class="hidden" tabindex="0">
+                                <label>무</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="selected">
+                    <table>
+                        <tr>
+                            <th><button class="clear"><i class="icon reset"><span class="blind">reset</span></i></button><span>전체해제</span></th>
+                            <td>
+                                <button class="ui button del">AI</button>
+                                <button class="ui button del">e-Learning</button>
+                                <button class="ui button del">Intermediate</button>
+                                <button class="ui button del">mySUNI</button>
+                                <button class="ui button del">Coursera</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">필터 조건에 해당하는 결과가 없습니다.</div>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="second">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">관심목록에 추가한 학습 과정이 없습니다.</div>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="third">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">권장과정에 해당하는 학습 과정이 없습니다.</div>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="fourth">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">학습예정중인 과정이 없습니다.</div>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="fifth">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">mySUNI 학습완료에 해당하는 학습 과정이 없습니다.</div>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="sixth">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">승인된 개인학습 정보가 없습니다.</div>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="seventh">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">취소/미이수에 해당하는 학습 과정이 없습니다.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

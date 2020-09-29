@@ -1,0 +1,275 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="add-personal-learning support">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">Create</div>
+            <div class="apl-notice">내가 갖고 있는 지식을 강좌로 만들 수 있습니다.<br />관리자의 확인 절차를 거쳐 다른 mySUNI 사용자에게 전파해보세요.</div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="apl-form-wrap create">
+            <form class="ui form">
+                <div class="section-tit">
+                    <span class="text1">기본정보</span>
+                    <div class="right-step">
+                        <div class="ui steps number-step">
+                            <div class="active step"><!-- .active .completed // -->
+                                <span class="number"><span class="blind">1</span></span>
+                                <span class="title">기본정보 및 노출정보</span>
+                            </div>
+                            <div class="step"><!-- .active .completed // -->
+                                <span class="number"><span class="blind">2</span></span>
+                                <span class="title">교육정보 및 부가정보</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">강좌명</label>
+                    <div class="ui form">
+                        <div class="ui right-top-count input"><!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                            <input type="text" placeholder="강좌명을 입력해주세요. (최대 100자 입력 가능)" value="Mobile App UI UX GUI Design T" />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <span class="validation">최대 100자까지 입력 가능합니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">채널선택</label>
+                    <div>
+                        <div class="table-css type5">
+                            <div class="row">
+                                <div class="cell v-middle">
+                                    <span class="text1">메인채널</span>
+                                    <button onclick="window.open('../create/CR-02-P01.html')" class="ui icon left button post delete">채널선택</button>
+                                </div>
+                                <div class="cell v-middle">
+                                    <!--
+                                    <span class="text1">메인채널을 선택해주세요.</span>
+                                    -->
+                                    <span class="texr2">AI > AI Fundamental</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-css type5">
+                            <div class="row">
+                                <div class="cell v-middle">
+                                    <span class="text1">서브채널</span>
+                                    <button onclick="window.open('../create/CR-02-P02.html')" class="ui icon left button post delete">채널선택</button>
+                                </div>
+                                <div class="cell v-middle">
+                                    <!--
+                                    <span class="text1">서브채널을 선택해주세요.</span>
+                                    -->
+                                    <span class="text2">AI > AI Biz. Implemetation, AI Tech Essential, Computer Vison AI</span>
+                                    <span class="text2">DT > DT Basics, Data Analytics, Data Analytics, Cloud Developing, Cloud Engineering</span>
+                                    <span class="text2">Global Collage > 국제정세, Global 사업개발전문가, 지역 전문가</span>
+                                    <span class="text2">Management > HR , 전략, Biz. Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="field">
+                    <label class="necessary">교육형태</label>
+                    <select class="ui dropdown w302">
+                        <option value="">선택해주세요.</option>
+                        <option value="c" selected>Video</option>
+                        <option value="d">Audio</option>
+                        <option value="e">Webpage</option>
+                        <option value="g">Document</option>
+                        <option value="h">Community</option>
+                    </select>
+                </div>
+                <hr class="dividing" />
+                <div class="section-tit">
+                    <span class="text1">노출 정보</span>
+                </div>
+                <div class="field">
+                    <label class="necessary">아이콘 선택</label>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="base" tabindex="0" class="hidden">
+                        <label>mySUNI Icon Set</label>
+                    </div>
+                    <div class="ui base radio checkbox">
+                        <input type="radio" name="base" checked="checked" tabindex="0" class="hidden">
+                        <label>아이콘 직접 등록</label>
+                    </div>
+
+                    <div class="round-wrap2">
+                        <div class="top img">
+                            <!-- 직접등록후, 등록전에는 비어있으면됨 -->
+                            <img src="../../img/thumb-card-60-px.jpg" />
+                            <button><i class="clear icon"><span class="blind">delete</span></i></button>
+                            <!-- // 직접등록후, 등록전에는 비어있으면됨 -->
+                        </div>
+                        <div class="bottom">
+                            <span class="text1"><i class="info16 icon"><span class="blind">infomation</span></i>JPG, PNG 파일을 등록하실 수 있습니다. / 최대 000 Byte 용량의 파일을 등록하실 수 있습니다. / Icon의 경우 60x60px의 사이즈를 추천합니다.</span>
+                            <div class="right-btn">
+                                <div class="ui input file2">
+                                    <label for="hidden-new-file2" class="ui button">파일찾기</label>
+                                    <input type="file" id="hidden-new-file2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">관계사 공개 범위 설정</label>
+                    <div class="round-wrap">
+                        <div class="filter">
+                            <div class="ui black checkbox">
+                                <input type="checkbox" class="hidden" tabindex="0">
+                                <label>전체</label>
+                            </div>
+                        </div>
+                        <div class="h112">
+                            <ul>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명 관계사명 관계사명 관계사명 관계사명 관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명 관계사명 관계사명 관계사명 관계사명 관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명 관계사명 관계사명 관계사명 관계사명 관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명 관계사명 관계사명 관계사명 관계사명 관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui base checkbox">
+                                        <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                        <label>관계사명</label>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label>Tag 정보 </label>
+                    <div class="ui form">
+                        <div class="ui h48 input">
+                            <input type="text" name="" value="UX, UI, 유엑스, 유아이, UX/UI, 유엑스유아이, UX, UI, 유엑스, 유아이" placeholder="Tag와 Tag는 쉼표(“,”)로 구분하며, 최대 10개까지 입력하실 수 있습니다.">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Create 버튼 클릭으로 상세 진입 시 -->
+                <div class="buttons">
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Cancel</button>
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Save</button>
+                    <button onclick="window.open('../create/CR-03-02.html')" class="ui button fix bg">Next</button>
+                </div>
+                <!-- Create 버튼 클릭으로 상세 진입 시 -->
+                <!-- List 영역에서 저장 상태인 View page > Modify 버튼 클릭 후 항목 상세 진입 시 -->
+                <br /><!-- // 케이스간 간격 확보용 개발시 삭제 -->
+                <div class="buttons">
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Delete</button>
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix line">Cancel</button>
+                    <button onclick="window.open('../create/CR-02-01.html')" class="ui button fix line">Save</button>
+                    <button onclick="window.open('../create/CR-01-02.html')" class="ui button fix bg">Next</button>
+                </div>
+                <!-- // List 영역에서 저장 상태인 View page > Modify 버튼 클릭 후 항목 상세 진입 시 -->
+            </form>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

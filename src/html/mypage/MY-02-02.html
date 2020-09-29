@@ -1,0 +1,162 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+    <div class="main-info-area">
+        <div class="progress-info-wrap mypage">
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="../../img/profile-56-px.png" alt="프로필사진 임시이미지" />
+                        </div>
+                        <button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P01.html')"><i aria-hidden="true" class="photo-edit icon"></i></button>
+                    </div>
+                    <div class="text-info">
+                        <div class="name">
+                            김유니
+                        </div>
+                        <div class="part">
+                            <span>SK C&C</span><br /><span>플랫폼 개발 1팀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <!--학습대기중일 때 페이지 이동 링크가 달라지는 점 유의*-->
+                    <div class="ui statistic total-time">
+                        <button class="button btn-total-time" onclick="window.open('../recommend/RC-01-01.html')">
+                            <span class="ui label onlytext"><i aria-hidden="true" class="total-time icon"></i><span>총 학습시간</span></span>
+                            <span class="value2">
+                                <span class="wating">학습대기중</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../certification/CT-03-01.html" target="_blank">
+                                <span><span class="text1">My Badge</span></span>
+                                <span><i class="icon badge35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../mypage/MY-02-01.html" target="blank">
+                                <span><span class="text1">My Stamp</span></span>
+                                <span><i class="icon stamp35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                        <div class="year">
+                            <div class="ui inline dropdown tight">
+                                <div class="text">2019</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">2019</div>
+                                    <div class="item">2018</div>
+                                    <div class="item">2017</div>
+                                    <div class="item">2016</div>
+                                    <div class="item">2015</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="channel-of-interest">
+            <div class="table-css type2">
+                <div class="row">
+                    <div class="cell vtop">
+                        <div class="tit-set">관심 Channel(32)<button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P02-2.html')"><i class="setting17 icon"></i><span class="blind">setting</span></button></div>
+                    </div>
+                    <div class="cell vtop">
+                        <div class="item-wrap"><!-- .active // -->
+                            <div class="belt">
+                                <div class="ui channel label">AI</div>
+                                <div class="ui channel label">Design</div>
+                                <div class="ui channel label">Database</div>
+                                <div class="ui channel label">Project Managing</div>
+                                <div class="ui channel label">디자인 방법론</div>
+                                <div class="ui channel label">Engineering</div>
+                                <div class="ui channel label">Production Data Analysis</div>
+                                <div class="ui channel label">DT Basics</div>
+                                <div class="ui channel label">Value</div>
+                                <div class="ui channel label">Mindfulness</div>
+                                <div class="ui channel label">AI</div>
+                                <div class="ui channel label">Design</div>
+                                <div class="ui channel label">Database</div>
+                                <div class="ui channel label">Project Managing</div>
+                                <div class="ui channel label">디자인 방법론</div>
+                                <div class="ui channel label">Engineering</div>
+                                <div class="ui channel label">Production Data Analysis</div>
+                                <div class="ui channel label">DT Basics</div>
+                                <div class="ui channel label">Value</div>
+                                <div class="ui channel label">Mindfulness</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell vtop">
+                        <div class="toggle-btn"><!-- .active // -->
+                            <button class="ui icon button img-icon"><i class="sum-open icon"></i><span class="blind">open</span></button>
+                            <button class="ui icon button img-icon"><i class="sum-close icon"></i><span class="blind">close</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="item" data-tab="first">My Badge<span class="count">+120</span></a>
+                <a class="active item" data-tab="second">My Stamp<span class="count">+24</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui full segment">
+
+        <!-- data-tab="first" -->
+        <div class="ui tab" data-tab="first">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">획득한 Badge가 없습니다.<br>등록된 Badge 리스트에서 원하는 Badge에 도전해보세요.</div>
+                <a href="../certification/CT-01-01.html" class="ui icon right button btn-blue2">Badge List 바로가기 <i class="icon morelink"></i></a>
+            </div>
+        </div>
+        <!-- // data-tab="first" -->
+
+        <!-- data-tab="second" -->
+        <div class="ui tab active" data-tab="second">
+            <div class="no-cont-wrap">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">획득한 스탬프가 없습니다.</div>
+            </div>
+        </div>
+        <!-- // data-tab="second" -->
+
+
+
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

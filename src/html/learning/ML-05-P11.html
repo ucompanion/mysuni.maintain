@@ -1,0 +1,37 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+   
+    <div class="ui base w380 modal">
+        <div class="header">
+            이어보기 안내
+        </div>
+        <div class="content">
+            <div class="content-wrap6">
+                <div class="test-report-cont">
+                   다음 동영상을 이어서 보시겠습니까?
+                </div>
+            </div>
+        </div>
+        <div class="actions2">
+            <button class="ui button pop2 d">아니오</button>
+            <button class="ui button pop2 p">예</button>
+        </div>
+    </div>
+
+</section>
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

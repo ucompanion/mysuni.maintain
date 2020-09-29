@@ -1,0 +1,47 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w700 modal">
+            <div class="header">SK 구성원이라면 반드시 들어야 할 <span class="red">핵인싸</span>(공통권장) 과정 안내</div>
+            <div class="content">
+                <div class="scrolling-80vh">
+                    <div class="content-wrap3">
+                        <!--컨텐츠영역 표시 개발시 삭제-->
+                        <div style="width:604px; padding:200px 0; background:#d8d8d8; color:red; font-size:20px; text-align:center;">컨텐츠 영역<br />(604*가변)</div>
+                        <!--//컨텐츠영역 표시 개발시 삭제-->
+                    </div>
+                </div>
+            </div>
+            <div class="actions2">
+                <button class="ui button pop2 p">OK</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+$('.custom.button').each(function(){
+    var _this = $(this);
+    var _pop = $(this).next();
+    _this.popup({
+        position : 'bottom right',
+        popup : _pop,
+        inline :  true,
+    })
+})
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

@@ -1,0 +1,62 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+<!-- .content -->
+<section class="content-half">
+    <div class="login-content">
+        <div class="left-area">
+            <div class="inner">
+                <p>Constant learning not only <br />makes you knowledgeable, <br />but also a better person</p>
+                <div class="illust">
+                    <img src="../../img/invalid-name.png" alt="손인사 하는 사람들" />
+                </div>
+            </div>
+        </div>
+        <div class="right-area">
+            <ul class="inner">
+                <div class="logo big"><i class="sk-university-login-big icon"><span class="blind">mySUNI</span></i></div>
+                <form class="ui form">
+                    <div class="field">
+                        <label class="blind">Email</label>
+                        <div class="ui h48 input">
+                            <input type="text" placeholder="Email">
+                            <i aria-hidden="true" class="clear link icon"></i>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="blind">Password</label>
+                        <div class="ui h48 input">
+                            <input type="password" placeholder="Password">
+                            <i aria-hidden="true" class="clear link icon"></i>
+                        </div>
+                    </div>
+                    <div class="save-id-wrap">
+                        <div class="ui base checkbox">
+                            <input type="checkbox" class="hidden" tabindex="0">
+                            <label>아이디저장</label>
+                        </div>
+                    </div>
+                    <button onclick="window.open('../login/LO-02-01.html')" class="ui button fix bg login">Login</button>
+                    <!--비밀번호 재설정 및 초기 셋팅 완료된 경우 Main 화면으로 이동
+                    <button onclick="window.open('../main/MA-01-01.html)')" class="ui button fix bg login">Login</button>
+                    -->
+                </form>
+                <ul class="txt-btn-area">
+                    <li><a href="../login/LO-01-01-P01.html" target="_blank">초기비밀번호안내</a></li>
+                    <li><a href="../login/LO-01-01-P01.html" target="_blank">비밀번호변경</a></li>
+                    <li><a href="../login/LO-04-01.html" target="_blank">비밀번호초기화</a></li>
+                </ul>
+                <ul class="login-guide">
+                    <li>최초 로그인 시 비밀번호를 변경해야 합니다.</li>
+                    <li>비밀번호 분실 시, 비밀 번호 초기화를 통해 접속 하실 수 있습니다.</li>
+                    <li>Help Desk : 02-6323-9002.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("script.html")
+</body>
+</html>

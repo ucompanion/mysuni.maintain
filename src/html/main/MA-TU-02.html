@@ -1,0 +1,165 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="main">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+    <div class="ui base w1000 modal tutorials2">
+        <div class="header2">
+            <div class="right-btn">
+                <div class="ui base checkbox">
+                    <input type="checkbox" class="hidden" tabindex="0">
+                    <label>더 이상 보지 않기</label>
+                </div>
+                <button class="ui button close">Close</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="scrolling-80vh">
+                <div class="cont-wrap">
+                    <div class="left">
+                        <div class="inner">
+                            <a href="#tu1" class="current">메인페이지 소개</a>
+                            <a href="#tu2">My Learning Information</a>
+                            <a href="#tu3">테마 별 학습 리스트</a>
+                            <a href="#tu4">인증제도 소개<span class="beta"><span class="blind">beta</span></span></a>
+                            <a href="#tu5">Learning Path</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div id="tu1" class="tu-cont current">
+                            <div class="title">
+                                <div class="tit1">학습자분들의 소중한 의견을 담아 새롭게 메인페이지를 개편하였습니다.</div>
+                                <div class="txt2">이번에 새롭게 시작되는 <b>Badge에 대한 안내</b>와 신규과정, 인기과정 등 <br /><b>다양한 학습 콘텐츠를 선택</b>하실 수 있도록 준비하였습니다.</div>
+                            </div>
+                            <div class="main-img"><img src="../../img/tu-img-main.png" alt="main" /></div>
+                            <div class="laptop"></div>
+                        </div>
+                        <div id="tu2" class="tu-cont">
+                            <div class="title">
+                                <div class="tit1">나의 학습 진행 상태를 한 눈에 확인할 수 있는 My Learning Information 영역이 제공됩니다.</div>
+                                <div class="txt2">
+                                    <ul>
+                                        <li>학습 중인 콘텐츠가 최상단에 배치됩니다.</li>
+                                        <li>Badge 획득을 위해 내가 도전중인 Badge List가 표기됩니다.(10월 이후 노출 예정)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img"><img src="../../img/tu-img-contents.png" alt="" /></div>
+                        </div>
+                        <div id="tu3" class="tu-cont">
+                            <div class="title">
+                                <div class="tit1">다양한 테마 별 학습 리스트 제공을 통해 원하는 콘텐츠로의 접근을 빠르게 지원해드립니다.</div>
+                                <div class="txt2">
+                                    <ul>
+                                        <li class="current">개인화 추천과정(써니의 Pick) : 학습자들의 특성분석을 통해 당신만을 위한 맞춤 컨텐츠를 제공 드립니다.</li>
+                                        <li>신규과정 : 따끈따끈한 최신 콘텐츠를 모아서 보여 드립니다.</li>
+                                        <li>인기과정 : 나만 모르는건가? 구성원들에게 인기있는 핫한 콘텐츠를 소개 드립니다.</li>
+                                        <li>권장과정 : Deep Change에 필요한 역량을 엄선하여 추천 드립니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- .swiper-section -->
+                            <div class="swiper-section type3">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" data-index="0">
+                                            <img src="../../img/tu-p01.png" alt="" />
+                                        </div>
+                                        <div class="swiper-slide" data-index="1">
+                                            <img src="../../img/tu-p02.png" alt="" />
+                                        </div>
+                                        <div class="swiper-slide" data-index="2">
+                                            <img src="../../img/tu-p03.png" alt="" />
+                                        </div>
+                                        <div class="swiper-slide" data-index="3">
+                                            <img src="../../img/tu-p04.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <!-- .swiper-section .type1 -->
+                        </div>
+                        <div id="tu4" class="tu-cont">
+                            <div class="img"><img src="../../img/tu-img-badge.png" alt="" /></div>
+                        </div>
+                        <div id="tu5" class="tu-cont">
+                            <div class="title">
+                                <div class="tit1">Learning Path는 각 Badge의 Skill이나 관련 지식에 따라 <br />여러 개의 학습들이 코스로 제공되는 것을 의미합니다.</div>
+                                <div class="txt2">획득하고자 하는 Badge의 Learning Path내 이미 이수한 학습이 있을 경우, <br />학습 완료 처리가 되어 있으므로 추가로 학습을 진행하실 필요는 없습니다.</div>
+                            </div>
+                            <div class="img"><img src="../../img/tu-img-learningpath.png" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+
+$('.left a').on('click',function(){
+    var linkdata = $(this).attr('href');
+    if(!$(this).hasClass('current')){
+        $(this).addClass('current');
+        $(this).siblings('a').removeClass('current');
+        $('.tu-cont').removeClass('current');
+        $(linkdata).addClass('current');
+    }
+    if(linkdata == '#tu3'){
+        $('#tu3 .txt2 ul li').removeClass('current');
+        $('#tu3 .txt2 ul li').eq(0).addClass('current');
+        var swiper = new Swiper('.type3 .swiper-container', {
+            effect : 'fade',
+            simulateTouch:true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3142,
+                disableOnInteraction: false,
+            },
+            on: {
+                slideChangeTransitionEnd: function(){
+                    var slideIndex = $('.swiper-slide-active').data('index');
+                    $('#tu3 .txt2 ul li').removeClass('current');
+                    $('#tu3 .txt2 ul li').eq(slideIndex).addClass('current');
+                },
+            },
+        });
+    }
+});
+
+
+
+if(!ui.fXGetCookie('tutorials2')){ // tutorials2이라는 쿠키값이 true가 존재하지 않으면
+    $('.ui.modal.tutorials2').modal({
+        autofocus: false,
+    }).modal('show');
+}
+
+$('.tutorials2 .header2 .right-btn button').bind('click', function(){
+    if($('.tutorials2 .header2 .ui.base.checkbox input[type=checkbox]').prop('checked')){ // 더 이상 보지 않기 체크상태로 close버튼 클릭시
+        ui.fXSetCookie('tutorials2', true, 9999);
+    }
+    $('.ui.modal.tutorials2').modal('hide');
+})
+// ui.fXSetCookie('tutorials2', true, 9999);
+// ui.fXGetCookie('tutorials2');
+
+
+
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

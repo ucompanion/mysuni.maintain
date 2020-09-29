@@ -1,0 +1,110 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+        <div class="ui base w1000 modal">
+            <div class="header">List Filter</div>
+            <div class="content">
+                <div class="filter-wrap">
+                    <div class="column">
+                        <div class="f-tit">College</div>
+                        <div class="f-list">
+                            <div class="scrolling">
+                                <div class="college">
+                                    <button class="ui toggle button toggle3" aria-pressed="false">AI (4)</button>
+                                    <button class="ui active toggle button toggle3" aria-pressed="false">DT (0)</button>
+                                    <button class="ui active toggle button toggle3" aria-pressed="false">행복 (5)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">SV (5)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">혁신디자인 (12)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">Global (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">Leadership (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">Management (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">반도체 (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">에너지솔루션 (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">SK경영 (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">SK아카데미 (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">Life Style (0)</button>
+                                    <button class="ui toggle button toggle3" aria-pressed="false">SK(주)_C&C (0)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="f-tit">Channel</div>
+                        <div class="f-list">
+                            <div class="scrolling">
+                                <div class="channel">
+                                    <ul>
+                                        <li>
+                                            <div class="ui base checkbox">
+                                                <input type="checkbox" class="hidden" tabindex="0" />
+                                                <label>AI 공통 <span>(30)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ui base checkbox">
+                                                <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                                <label>AI Biz Essential <span>(30)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ui base checkbox">
+                                                <input type="checkbox" class="hidden" tabindex="0" />
+                                                <label>AI Biz 활용(job) <span>(20)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ui base checkbox">
+                                                <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                                <label>AI Biz 활용(Industry) <span>(8)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ui base checkbox">
+                                                <input type="checkbox" class="hidden" tabindex="0" checked="checked" />
+                                                <label>AI Biz 활용(Industry) <span>(0)</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="f-tit">Selected <span class="counter"><span class="now">0</span> / 80</span></div>
+                        <div class="f-list">
+                            <div class="scrolling">
+                                <div class="selected">
+                                    <button class="ui button del">AI</button>
+                                    <button class="ui button del">machine learning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="clear"><i class="icon reset"><span class="blind">reset</span></i></button>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="ui button w190 pop d">Cancel</button>
+                <button class="ui button w190 pop p">Filter</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+$('.ui.checkbox').checkbox();
+$('.ui.button.toggle').state();
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

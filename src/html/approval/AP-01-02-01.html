@@ -1,0 +1,85 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ap-title border">
+        <div class="inner">
+            <div class="txt1">교육 승인 요청</div>
+            <div class="txt2">구성원이 수강신청한 과정에 대해 승인/반려 처리 할 수 있습니다.</div>
+        </div>
+    </div>
+    <!-- // .add-personal-learning -->
+    <div class="ui full segment">
+        <div class="apl-form-wrap">
+            <form class="ui form">
+                <div class="result-view">
+                    <div class="title">결제 요청 정보</div>
+                    <dl class="in">
+                        <dt>신청자</dt>
+                        <dd>유은미</dd>
+                    </dl>
+                    <dl class="in">
+                        <dt>조직</dt>
+                        <dd>서비스 운영팀</dd>
+                    </dl>
+                    <dl class="bl">
+                        <dt>학습정보</dt>
+                        <dd>
+                            <table class="view-table">
+                                <tr>
+                                    <th>과정명</th>
+                                    <td>AI 101</td>
+                                </tr>
+                                <tr>
+                                    <th>학습유형</th>
+                                    <td>Classroom</td>
+                                </tr>
+                                <tr>
+                                    <th>신청한 차수</th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th>(차수)교육기간</th>
+                                    <td>2020.02.20~2020.03.20</td>
+                                </tr>
+                                <tr>
+                                    <th>강의장소</th>
+                                    <td>SK C&C 본사 지하 1층 대강당</td>
+                                </tr>
+                                <tr>
+                                    <th>인당 교육 금액</th>
+                                    <td>₩1,000,000</td>
+                                </tr>
+                            </table>
+                        </dd>
+                    </dl>
+                    <div class="title mt50">결제 승인 정보</div>
+                    <dl class="in">
+                        <dt>결제 상태</dt>
+                        <dd class="blue">승인요청</dd>
+                    </dl>
+                    <dl class="bl">
+                        <dt>승인자 의견</dt>
+                        <dd>
+                            <textarea placeholder="승인자 의견을 입력해주세요"></textarea>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="buttons border-none">
+                    <button class="ui button fix line">List</button>
+                    <button class="ui button fix line">반려</button>
+                    <button class="ui button fix bg">승인</button>
+                </div>
+            </form>
+        </div>
+	</div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

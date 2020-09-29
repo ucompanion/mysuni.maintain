@@ -1,0 +1,1958 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+    <div class="main-info-area">
+        <div class="progress-info-wrap mypage">
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="../../img/profile-56-px.png" alt="프로필사진 임시이미지" />
+                        </div>
+                        <button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P01.html')"><i aria-hidden="true" class="photo-edit icon"></i></button>
+                    </div>
+                    <div class="text-info">
+                        <div class="name">
+                            김유니
+                        </div>
+                        <div class="part">
+                            <span>SK C&C</span><br /><span>플랫폼 개발 1팀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="ui statistic total-time">
+                        <button class="button btn-total-time" onclick="window.open('../mypage/MY-01-01-P03.html')">
+                            <span class="ui label onlytext"><i aria-hidden="true" class="total-time icon"></i><span>총 학습시간</span></span>
+                            <span class="value2">
+                                <strong>120</strong><span>h</span>
+                                <strong class="min">00</strong><span>m</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../certification/CT-03-01.html" target="_blank">
+                                <span><span class="text1">My Badge</span></span>
+                                <span><i class="icon badge35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../mypage/MY-02-01.html" target="blank">
+                                <span><span class="text1">My Stamp</span></span>
+                                <span><i class="icon stamp35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                        <div class="year">
+                            <div class="ui inline dropdown tight">
+                                <div class="text">2019</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">2019</div>
+                                    <div class="item">2018</div>
+                                    <div class="item">2017</div>
+                                    <div class="item">2016</div>
+                                    <div class="item">2015</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="item" data-tab="first">학습중<span class="count">+20</span></a>
+                <a class="item" data-tab="second">관심목록<span class="count">+24</span></a>
+                <a class="item division" data-tab="third">권장과정<span class="count">+120</span></a>
+                <a class="item" data-tab="fourth">학습예정<span class="count">+12</span></a>
+                <a class="item" data-tab="fifth">mySUNI 학습완료<span class="count">+2</span></a>
+                <a class="item" data-tab="sixth">개인학습 완료<span class="count">+20</span></a>
+                <a class="active item" data-tab="seventh">취소/미이수<span class="count">+20</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="ui tab" data-tab="first">
+            <div class="top-guide-title">
+                <div class="left-wrap">
+                    <button class="ui icon left button post delete btn-left"><i class="del24 icon"></i>Delete</button>
+                    <button class="ui icon left button post excel-down ml8"><i aria-hidden="true" class="excel-down icon"></i>엑셀 다운로드</button>
+                    <div class="list-number">총 <strong>24개</strong>의 리스트가 있습니다.</div>
+                </div>
+                <div class="right-wrap">
+                    <div class="view-all">
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="radio2" checked="checked" tabindex="0" class="hidden">
+                            <label>코스만보기</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="radio2" tabindex="0" class="hidden">
+                            <label>전체보기</label>
+                        </div>
+                    </div>
+                    <button class="ui icon left button post"><i aria-hidden="true" class="filter2 icon"></i>Filter</button>
+                </div>
+            </div>
+        
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-02">
+                    <thead>
+                        <tr>
+                            <th class="ck">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">전체선택</span></label>
+                                </div>
+                            </th>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>학습유형</th>
+                            <th>Level</th>
+                            <th>진행율</th>
+                            <!--<th>학습시간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습시간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <th>학습시작일<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>학습시작일<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Experiential</td>
+                            <td>Intermediate</td>
+                            <td>-</td>
+                            <td>00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Course</td>
+                            <td>Advanced</td>
+                            <td>4/10</td>
+                            <td>00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Course</td>
+                            <td>Advanced</td>
+                            <td>4/10</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Course</td>
+                            <td>Advanced</td>
+                            <td>4/10</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Course</td>
+                            <td>Advanced</td>
+                            <td>4/10</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0" />
+                                    <label><span class="blind">선택</span></label>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>-</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="second">
+            <div class="top-guide-title">
+                <div class="list-number">총 <strong>24개</strong>의 리스트가 있습니다.</div>
+                <button class="ui icon left button post"><i aria-hidden="true" class="filter2 icon"></i>Filter</button>
+            </div>
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-03">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>학습유형</th>
+                            <th>Level</th>
+                            <!--<th>학습시간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습시간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <!--<th>스탬프<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>스탬프<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <th>등록일<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>등록일<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Experiential</td>
+                            <td>Intermediate</td>
+                            <td>00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="third">
+            <div class="top-guide-title">
+                <div class="list-number">총 <strong>24개</strong>의 리스트가 있습니다.</div>
+                <button class="ui icon left button post"><i aria-hidden="true" class="filter2 icon"></i>Filter</button>
+            </div>
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-03">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>학습유형</th>
+                            <th>Level</th>
+                            <!--<th>학습시간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습시간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <!--<th>스탬프<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>스탬프<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <th>등록일<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>등록일<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Experiential</td>
+                            <td>Intermediate</td>
+                            <td>00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="fourth">
+            <div class="top-guide-title">
+                <div class="list-number">총 <strong>24개</strong>의 리스트가 있습니다.</div>
+                <button class="ui icon left button post"><i aria-hidden="true" class="filter2 icon"></i>Filter</button>
+            </div>
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-03">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>학습유형</th>
+                            <th>Level</th>
+                            <!--<th>학습시간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습시간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <!--<th>스탬프<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>스탬프<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <th>학습시작일<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>학습시작일<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Experiential</td>
+                            <td>Intermediate</td>
+                            <td>00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="fifth">
+            <div class="top-guide-title">
+                <div class="left-wrap">
+                    <button class="ui icon left button post delete btn-left"><i class="del24 icon"></i>Delete</button>
+                    <button class="ui icon left button post excel-down ml8"><i aria-hidden="true" class="excel-down icon"></i>엑셀 다운로드</button>
+                    <div class="list-number">총 <strong>24개</strong>의 리스트가 있습니다.</div>
+                </div>
+                <div class="right-wrap">
+                    <div class="view-all">
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="radio3" checked="checked" tabindex="0" class="hidden">
+                            <label>코스만보기</label>
+                        </div>
+                        <div class="ui base radio checkbox">
+                            <input type="radio" name="radio3" tabindex="0" class="hidden">
+                            <label>전체보기</label>
+                        </div>
+                    </div>
+                    <button class="ui icon left button post"><i aria-hidden="true" class="filter2 icon"></i>Filter</button>
+                </div>
+            </div>
+
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-06">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>학습유형</th>
+                            <th>Level</th>
+                            <!--<th>학습시간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습시간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <!--<th>스탬프<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습완료일<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>학습완료일<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Experiential</td>
+                            <td>Intermediate</td>
+                            <td>00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Intermediate</td>
+                            <td>00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+
+        <div class="ui tab" data-tab="sixth">
+            <div class="top-guide-title">
+                <div class="list-number">전체 <strong>5,000개</strong> 승인 완료</div>
+            </div>
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-09">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th class="title">교육명</th>
+                            <th>Channel</th>
+                            <th>교육시간</th>
+                            <th>승인자</th>
+                            <th>승인자 E-mail</th>
+                            <th>승인일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">TrendTrendTrendTrend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정신현정신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcdefg01234@sksk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">TrendTrendTrendTrend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정신현정신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcdefg01234@sksk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="title"><a href="#none" class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가</a></td>
+                            <td><span class="ellipsis">Trend</span></td>
+                            <td>00시 00분</td>
+                            <td class="name"><span class="ellipsis">신현정</span></td>
+                            <td class="mail"><span class="ellipsis">abcd@sk.com</span></td>
+                            <td>2020.02.02</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+
+        <div class="ui tab active" data-tab="seventh">
+            <div class="top-guide-title">
+                <div class="list-number">총 <strong>24개</strong>의 리스트가 있습니다.</div>
+                <button class="ui icon left button post"><i aria-hidden="true" class="filter2 icon"></i>Filter</button>
+            </div>
+            <div class="mylearning-list-wrap">
+                <table class="ml-02-03">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>College</th>
+                            <th class="title">과정명</th>
+                            <th>학습유형</th>
+                            <th>Level</th>
+                            <!--<th>학습시간<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>학습시간<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <!--<th>스탬프<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>-->
+                            <th>스탬프<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th>
+                            <th>취소/미이수일<a href="#"><i class="list-down16 icon"><span class="blind">내림차순 정렬</span></i></a></th>
+                            <!-- <th>취소/미이수일<a href="#"><i class="list-up16 icon"><span class="blind">오름차순 정렬</span></i></a></th> -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Experiential</td>
+                            <td>Intermediate</td>
+                            <td>00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>AI</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>2</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Management</td>
+                            <td class="title"><span class="ellipsis">AI와 Block chain과의 상관관계는 어떻게 되는가?</span></td>
+                            <td>Video</td>
+                            <td>Advanced</td>
+                            <td>00h 00m</td>
+                            <td>1</td>
+                            <td>2020.02.02</td>
+                            <td><a href="#" class="btn-blue">학습하기</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-comments">
+                <button class="ui icon left button moreview"><i aria-hidden="true" class="moreview icon"></i><span>list more</span></button>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

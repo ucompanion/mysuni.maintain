@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <circle id="q2hiqsusea" cx="12" cy="12" r="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-326 -193) translate(0 109) translate(30 84) translate(296)">
+                        <circle cx="12" cy="12" r="11" stroke="#FFF" stroke-width="2"/>
+                        <path fill="#FFF" d="M13 8L18 16 8 16z" transform="rotate(90 13 12)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

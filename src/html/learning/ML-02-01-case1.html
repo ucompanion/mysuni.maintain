@@ -1,0 +1,157 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+    <div class="main-info-area">
+        <div class="progress-info-wrap mypage">
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="../../img/profile-56-px.png" alt="프로필사진 임시이미지" />
+                        </div>
+                        <button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P01.html')"><i aria-hidden="true" class="photo-edit icon"></i></button>
+                    </div>
+                    <div class="text-info">
+                        <div class="name">
+                            김유니
+                        </div>
+                        <div class="part">
+                            <span>SK C&C</span><br /><span>플랫폼 개발 1팀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="ui statistic total-time">
+                        <button class="button btn-total-time" onclick="window.open('../mypage/MY-01-01-P03.html')">
+                            <span class="ui label onlytext"><i aria-hidden="true" class="total-time icon"></i><span>총 학습시간</span></span>
+                            <span class="value2">
+                                <strong>120</strong><span>h</span>
+                                <strong class="min">00</strong><span>m</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../certification/CT-03-01.html" target="_blank">
+                                <span><span class="text1">My Badge</span></span>
+                                <span><i class="icon badge35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="cell-inner">
+                    <div class="stamp-wrap">
+                        <div class="ui stamp label">
+                            <a href="../mypage/MY-02-01.html" target="blank">
+                                <span><span class="text1">My Stamp</span></span>
+                                <span><i class="icon stamp35"></i><span class="text2">x</span><span class="text3">12</span></span>
+                            </a>
+                        </div>
+                        <div class="year">
+                            <div class="ui inline dropdown tight">
+                                <div class="text">2019</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">2019</div>
+                                    <div class="item">2018</div>
+                                    <div class="item">2017</div>
+                                    <div class="item">2016</div>
+                                    <div class="item">2015</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="channel-of-interest">
+            <div class="table-css type2">
+                <div class="row">
+                    <div class="cell vtop">
+                        <div class="tit-set">관심 Channel(32)<button class="ui icon button img-icon" onclick="window.open('../mypage/MY-01-01-P02-2.html')"><i class="setting17 icon"></i><span class="blind">setting</span></button></div>
+                    </div>
+                    <div class="cell vtop">
+                        <div class="item-wrap"><!-- .active // -->
+                            <div class="belt">
+                                <div class="ui channel label">AI</div>
+                                <div class="ui channel label">Design</div>
+                                <div class="ui channel label">Database</div>
+                                <div class="ui channel label">Project Managing</div>
+                                <div class="ui channel label">디자인 방법론</div>
+                                <div class="ui channel label">Engineering</div>
+                                <div class="ui channel label">Production Data Analysis</div>
+                                <div class="ui channel label">DT Basics</div>
+                                <div class="ui channel label">Value</div>
+                                <div class="ui channel label">Mindfulness</div>
+                                <div class="ui channel label">AI</div>
+                                <div class="ui channel label">Design</div>
+                                <div class="ui channel label">Database</div>
+                                <div class="ui channel label">Project Managing</div>
+                                <div class="ui channel label">디자인 방법론</div>
+                                <div class="ui channel label">Engineering</div>
+                                <div class="ui channel label">Production Data Analysis</div>
+                                <div class="ui channel label">DT Basics</div>
+                                <div class="ui channel label">Value</div>
+                                <div class="ui channel label">Mindfulness</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell vtop">
+                        <div class="toggle-btn"><!-- .active // -->
+                            <button class="ui icon button img-icon"><i class="sum-open icon"></i><span class="blind">open</span></button>
+                            <button class="ui icon button img-icon"><i class="sum-close icon"></i><span class="blind">close</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui tab-menu offset0 sticky">
+        <div class="cont-inner">
+            <div class="ui sku menu">
+                <a class="active item" data-tab="first">학습중</a>
+                <a class="item" data-tab="second">관심목록</a>
+                <a class="item division" data-tab="third">권장과정</a>
+                <a class="item" data-tab="fourth">학습예정</a>
+                <a class="item" data-tab="fifth">mySUNI 학습완료</a>
+                <a class="item" data-tab="sixth">취소/미이수</a>
+                <a class="item" data-tab="seventh">보유스탬프</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="no-cont-wrap">
+            <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+            <div class="text">학습중인 과정이 없습니다.</div>
+            <a href="#recommend" class="ui icon right button btn-blue2">김유니 님에게 추천하는 학습 과정 보기<i class="icon morelink"></i></a>
+            <!--
+            각 Tab 메뉴명과 함께 알림 메시지를 제공
+            <div class="text">관심목록에 추가한 학습 과정이 없습니다.</div>
+            <div class="text">학습중인 과정이 없습니다.</div>
+            <a href="#recommend" class="ui icon right button btn-blue2">김유니 님에게 추천하는 학습 과정 보기<i class="icon morelink"></i></a>
+            <div class="text">학습예정중인 과정이 없습니다.</div>
+            <div class="text">권장과정에 해당하는 학습 과정이 없습니다.</div>
+            <div class="text">학습완료에 해당하는 학습 과정이 없습니다.</div>
+            <div class="text">취소/미이수에 해당하는 학습 과정이 없습니다.</div>
+            -->
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

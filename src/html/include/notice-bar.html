@@ -1,0 +1,27 @@
+<!--.notice-bar-->
+<section class="ui notice-bar">
+    <div class="inner">
+        <div class="text">
+            <a href="#" class="ellipsis">[공지] 2020년 6월 20일 04:00~10:00시 까지 서비스 안정화를 위한 시스템 점검이 진행될 예정입니다.</a>
+        </div>
+        <div class="right">
+            <div class="ui black checkbox">
+                <input type="checkbox" class="hidden" tabindex="0">
+                <label>오늘 하루 보지 않기</label>
+            </div>
+            <button class="ui button close2"><span class="blind">close</span></button>
+        </div>
+    </div>
+</section>
+
+<script>
+    if(!ui.fXGetCookie('notice')){ 
+        $('.notice-bar').css('display','block');
+    }
+    $('.notice-bar button.close2').bind('click', function(){
+        if($('.notice-bar .ui.checkbox input[type=checkbox]').prop('checked')){ // 오늘 하루 보지 않기 클릭시
+            ui.fXSetCookie('notice', true, 1);
+        }
+        $('.notice-bar').css('display','none');
+    })
+</script>

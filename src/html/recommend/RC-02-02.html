@@ -1,0 +1,48 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content mylearning">
+    <!-- .main-filter -->
+    <div class="main-filter">
+        <div class="ui full segment">
+            <div class="ui inline transparent large dropdown" data-add=" 채널의 추천과정"><!-- data-addText 선택시 추가될 text // -->
+                <div class="text">AI 채널의 추천과정</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item">AI</div>
+                    <div class="item">Design</div>
+                    <div class="item">Database</div>
+                    <div class="item">Project Managing</div>
+                    <div class="item">Big Data</div>
+                    <div class="item">AI</div>
+                    <div class="item">Design</div>
+                    <div class="item">Database</div>
+                    <div class="item">Project Managing</div>
+                    <div class="item">Big Data</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // .main-filter -->
+
+    <div class="ui full segment">
+        <div class="sort-reult">
+            <div class="no-cont-wrap type2">
+                <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                <div class="text">선택하신 채널에 해당하는 추천 학습 과정이 없습니다.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+<script>
+$('.ui.button.toggle').state();
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

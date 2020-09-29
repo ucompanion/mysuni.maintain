@@ -1,0 +1,42 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content no-padding">
+
+    <!--팝업-->
+    <div class="ui base w588 modal">
+        <div class="header">
+            Badge 획득 알림
+        </div>
+        <div class="content">
+            <div class="content-wrap6">
+                <div class="badge-p01">
+                    <div class="badge s220 basic">
+                        <span class="issuing"><img src="../../img/logo-badge.svg" alt="발급기관:mySUNI" /></span>
+            <span class="college"><img src="../../img/icon-chanel-64-px.png" alt="" /></span>
+                        <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+                    </div>
+                    <div class="t1">축하합니다</div>
+                    <div class="t2">‘AI / DT Literacy - Customer Empathy’</div>
+                    <div class="t3">Badge가 발급되었습니다.</div>
+                </div>
+            </div>
+        </div>
+        <div class="actions2">
+            <button class="ui button pop2 p">확인</button>
+        </div>
+    </div>
+
+</section>
+<!-- // .content -->
+<script>
+$('.ui.modal').modal('show');
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

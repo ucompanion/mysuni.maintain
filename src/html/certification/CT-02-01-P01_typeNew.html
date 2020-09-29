@@ -1,0 +1,36 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+
+
+    <!--팝업-->
+    <div class="ui base w380 modal">
+        <div class="header">
+            Badge 발급 안내
+        </div>
+        <div class="content">
+            <div class="content-wrap6">
+                <div class="test-report-cont">
+                    해당 Badge는 모든 학습이 완료되면 발급요청을 하실 수 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="actions2">
+            <button class="ui button pop2 p">Confirm</button>
+        </div>
+    </div>
+
+</section>
+<!-- // .content -->
+<script>
+$('.ui.modal').modal('show');
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

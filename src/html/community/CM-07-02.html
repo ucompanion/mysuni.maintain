@@ -1,0 +1,64 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <!-- .add-personal-learning -->
+    <div class="add-personal-learning community">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">Edit post</div>
+        </div>
+    </div>
+    <!-- // .add-personal-learning -->
+    <div class="ui full segment">
+
+        <div class="apl-form-wrap community">
+            <form class="ui form">
+                <!-- .Additional input -->
+                <div class="field">
+                    <label>제목</label>
+                    <div class="ui right-top-count input"><!-- .error // -->
+                        <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                        <input type="text" placeholder="제목을 입력해주세요." value="사회적 기업의 생태계 조성 SPC" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>본문</label>
+                    <div class="ui editor-wrap">
+
+                        <!--에디터영역 개발 시 삭제-->
+                        <div style="height:350px; background:#fff; color:#000; text-align:center; line-height:350px; font-size:35px; border:1px solid #7f7f7f; border-radius:4px;">temp 에디터영역 / 개발 시 본 div 삭제</div>
+                        <!--//개발 시 삭제-->
+
+                    </div>
+                </div>
+                <div class="field w525">
+                    <label>첨부파일</label>
+                    <div class="ui form">
+                        <div class="ui w624 input file">
+                            <input type="text" readonly placeholder="파일을 업로드 가능합니다." />
+                            <i aria-hidden="true" class="clear link icon"></i>
+                            <label for="hidden-new-file" class="ui button">파일찾기</label>
+                            <input type="file" id="hidden-new-file">
+                        </div>
+                    </div>
+                </div>
+                <!-- // .Additional input -->
+                <div class="buttons">
+                    <button class="ui button fix line" onclick="window.open('../community/CM-03-01.html')">Cancel</button>
+                    <button class="ui button fix bg">Edit</button>
+                </div>
+            </form>
+        </div>
+	</div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

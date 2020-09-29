@@ -1,0 +1,44 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <!--동영상 팝업-->
+        <div class="ui base w1000 modal video-class">
+            <div class="header">
+                동영상 학습 후 “Close”버튼을 클릭하시면 학습이력이 즉시 반영됩니다.
+                <div class="right-btn">
+                    <button class="ui button close">Close</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="scrolling-80vh">
+                    <!--영상-->
+                    <div class="video">
+                        <!-- <iframe src="https://sku.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=fbe4050a-7d9d-40bb-a819-ab89007cb3cd" width="1000" height="562" style="padding:0px;border:0px;" frameborder="0" allowfullscreen="true" allow="autoplay"></iframe> -->
+                        <iframe width="1000" height="562" src="https://www.youtube.com/embed/XUM3sH1kBtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//동영상 팝업-->
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+$('.ui.modal button.close').bind('click', function(){
+    $('.ui.modal').modal('hide');
+})
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

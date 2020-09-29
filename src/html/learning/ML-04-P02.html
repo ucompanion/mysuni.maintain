@@ -1,0 +1,80 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w700 modal">
+            <div class="header res">
+                Lecture score
+                <span class="sub">Score registration will be reflected in the course</span>
+            </div>
+            <div class="content">
+                <div class="scrolling-80vh">
+
+                    <div class="course-information-pop">
+                        <div class="c-icon"><span class="icon type1"></span></div>
+                        <div class="ch">
+                            <div class="ui color blue label">leadership</div>
+                            <!--
+                            <div class="ui color purple label">AI</div>
+                            <div class="ui color teal label">Management</div>
+                            <div class="ui color red label">혁신디자인</div>
+                            <div class="ui color green label">global</div>
+                            <div class="ui color violet label">DT</div>
+                            <div class="ui color orange label">SV</div>
+                            <div class="ui color yellow label">행복</div>
+                            -->
+                        </div>
+                        <div class="course-name">Open Source를 활용한 Big Data 기반 플랫폼을 이용한 데이터 분석</div>
+                        
+                        <div class="add-info">
+                            <div class="ui label bold onlytext"><i aria-hidden="true" class="video2 icon"></i><span>Video</span></div><span class="dash"></span><span class="text1">Leading Myself</span>
+                        </div>
+                        <div class="add-info">
+                            <div class="ui label bold onlytext"><i aria-hidden="true" class="date icon"></i></div><span class="text1">등록일 : 2019.12.31</span><span class="dash"></span><span class="text1">학습기간 : 2019.12.31  ~  2020.02.20</span>
+                        </div>
+                        
+
+                    </div>
+                        
+                        
+                        
+                        
+                        
+
+                    <div class="rating-pop">
+                        <div class="handler">
+                            <div class="ui pop rating line" data-max-rating="5"></div>
+                        </div>
+                    </div>
+
+                    
+
+                        
+
+                </div>
+            </div>
+            <div class="actions2">
+                <button class="ui button pop2 d">Cancel</button>
+                <button class="ui button pop2 p">OK</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.rating').rating();
+$('.ui.modal').modal('show');
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

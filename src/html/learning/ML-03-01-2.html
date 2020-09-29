@@ -1,0 +1,221 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body class="white">
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <!-- .add-personal-learning -->
+    <div class="add-personal-learning">
+        <div class="add-personal-learning-wrap">
+            <div class="apl-tit">개인학습</div>
+            <div class="apl-notice">‘mySUNI / 각 사 교육’ 외 개인적으로 학습하였을 경우, <br />승인권자의 확인 후 학습시간으로 등록 할 수 있습니다.</div>
+        </div>
+    </div>
+    <!-- // .add-personal-learning -->
+    <div class="ui full segment">
+
+        <div class="apl-form-wrap">
+            <form class="ui form">
+                <!-- .Required input -->
+                <h4 class="ui dividing header necessary">Required input</h4>
+                <div class="field">
+                    <label class="necessary">강좌명</label>
+                    <div class="ui right-top-count input"><!-- .error // -->
+                        <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                        <input type="text" placeholder="강좌명을 입력해주세요." />
+                        <span class="validation">최대 100자까지 입력 가능합니다. </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="necessary">학습유형</label>
+                    <select class="ui dropdown w302">
+                        <option value="">선택해주세요.</option>
+                        <option value="a">Classroom</option>
+                        <option value="b">e-learning</option>
+                        <option value="c">Video</option>
+                        <option value="d">Audio</option>
+                        <option value="e">Webpage</option>
+                        <option value="f">Experiential</option>
+                        <option value="g">Document</option>
+                        <option value="h">Community</option>
+                        <option value="i">Test</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="necessary">카테고리</label>
+
+                    <div class="ui grid apl">
+                        <div class="column">
+                            <div class="header">College</div>
+                            <ul class="college-list">
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect" checked="checked">
+                                        <label>AI</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>DT</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>행복</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>SV</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>혁신디자인</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>Global</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>Leadership</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui rect-icon radio checkbox">
+                                        <input type="radio" name="rect">
+                                        <label>Management</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <div class="header">Channel</div>
+                            <!--
+                            <div class="default">Collage 선택 시 Channel 항목을 선택할 수 있습니다. </div>
+                            -->
+                            <ul class="channel-list">
+                                <li>
+                                    <div class="ui round radio checkbox">
+                                        <input type="radio" name="radio" checked="checked">
+                                        <label>Data Analysis</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui round radio checkbox">
+                                        <input type="radio" name="radio">
+                                        <label>Big Data Administration</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui round radio checkbox">
+                                        <input type="radio" name="radio">
+                                        <label>Big Data Administration</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ui round radio checkbox">
+                                        <input type="radio" name="radio" disabled="disabled">
+                                        <label>Big Data Administration</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="necessary">기간</label>
+                    <div class="ui grid due">
+                        <div class="column">
+                            <div class="ui calendar" id="rangestart">
+                                <div class="ui input right icon">
+                                    <label>시작일</label>
+                                    <i class="calendar24 icon"><span class="blind">date</span></i>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <span class="dash">-</span>
+                            <div class="ui calendar" id="rangeend">
+                                <div class="ui input right icon">
+                                    <label>종료일</label>
+                                    <i class="calendar24 icon"><span class="blind">date</span></i>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>일일 강좌 등록 시 시작일과 종료일의 날짜를 동일하게 설정해 주시기 바랍니다.</div>
+                        </div>
+                        <div class="column">
+                            <div class="ui h48 input time">
+                                <input type="text" /><label>h</label>
+                                <i aria-hidden="true" class="clear link icon"></i>
+                            </div>
+                            <div class="ui h48 input time">
+                                <input type="text" /><label>m</label>
+                                <i aria-hidden="true" class="clear link icon"></i>
+                            </div>
+                            <div class="info-text"><i class="info16 icon"><span class="blind">infomation</span></i>소요시간은 100시간 이상, 1분 이내는 등록할 수 없습니다.</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label class="necessary">승인자 등록</label>
+                    <div class="ui w624 action input"><!-- .write 추가시 clear아이콘 노출 -->
+                        <input type="text" placeholder="승인자를 등록해주세요." readonly />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <button class="ui button">승인자찾기</button>
+                    </div>
+                </div>
+                <!-- // .Required input -->
+                <!-- .Additional input -->
+                <h4 class="ui dividing header">Additional input</h4>
+                <div class="field">
+                    <label>강좌설명</label>
+                    <div class="ui right-top-count input"><!-- .error // -->
+                        <span class="count"><span class="now">0</span>/<span class="max">500</span></span>
+                        <textarea placeholder="500자 이내로 입력하세요."></textarea>
+                        <span class="validation">최대 500자까지 입력 가능합니다. </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>URL</label>
+                    <div class="ui w624 large icon h48 input">
+                        <input type="text" name="" placeholder="https://">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>첨부파일</label>
+                    <div class="ui w624 input file">
+                        <input type="text" readonly placeholder="첨부파일을 등록해주세요." />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <label for="hidden-new-file" class="ui button">파일찾기</label>
+                        <input type="file" id="hidden-new-file">
+                    </div>
+                </div>
+                <!-- // .Additional input -->
+                <div class="buttons">
+                    <button class="ui button fix line">Cancel</button>
+                    <button class="ui button fix bg">Request for approval</button>
+                </div>
+            </form>
+        </div>
+	</div>
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

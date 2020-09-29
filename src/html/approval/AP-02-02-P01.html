@@ -1,0 +1,39 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w700 modal">
+            <div class="header">반려 사유 등록</div>
+            <form class="ui base form">
+                <div class="content">
+                    <div class="scrolling-80vh">
+                        <div class="content-wrap6">
+                            <textarea placeholder="반려 사유를 입력해주세요. &#13;&#10;(입력된 반려 사유는 E-mail을 통해 전달되며, 등록된 내용은 수정하실 수 없습니다.)"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions2">
+                    <button class="ui button pop2 d">Cancel</button>
+                    <button class="ui button pop2 p">OK</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

@@ -1,0 +1,1521 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content channel">
+    <div class="main-info-area">
+        <div class="progress-info-wrap">
+            <div class="cell thumb">
+                <div><i class="icon college-ai86"><span class="blind">ai</span></i></div>
+            </div>
+            <div class="cell title">
+                <h2 class="college-name">AI College</h2>
+                <p><em>AI 아싸(Outsider)에서 AI 핵인싸(Insider)로!</em>AI College는 SK 구성원 누구나 알아야 할 기본 지식을 바탕으로, 각 산업과 직무에서 AI를 활용하는 실무역량을 <br />배양하고, AI기술 전문가로 성장할 수 있는 기회를 제공합니다.</p>
+            </div>
+            <div class="cell btn-wrap">
+                <button onclick="window.open('../introduction/IN-02-01.html')" class="ui button personal line">
+                    <span>mySUNI 전체 커리큘럼 보기</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="ui full segment">
+        <div class="college-detail">
+            <div class="cont-wrap">
+                <div class="section-top">
+                    <div class="section-count">
+                        <b>‘AI College’</b> 에 총 <b>111개</b>의 학습 과정이 있습니다.
+                    </div>
+                    <div class="comments-sort">
+                        <button type="button" class="btn-filter-blue"><span>Filter(05)</span></button>
+                    </div>
+                </div>
+                <!--filter-->
+                <div class="filter-table">
+                    <div class="title">Filter</div>
+                    <table>
+                        <tr class="ch">
+                            <th>Channel</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>AI Fundamental(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>AI Tech Essential(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>AI Biz. Implementation(20)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>AI/DT Literacy(04)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Computer Vision AI(16)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Speech AI(20)</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육유형</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Course(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Video(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Audio(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>e-Learning(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Classroom(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Community(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Web Page(13)</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Documents(13)</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>난이도</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Basic</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Intermediate</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Advanced</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Expert</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육기관</th>
+                            <td>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Select All</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>mySUNI</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" checked="checked" class="hidden" tabindex="0">
+                                    <label>Coursera</label>
+                                </div>
+                                <div class="ui base checkbox">
+                                    <input type="checkbox" class="hidden" tabindex="0">
+                                    <label>Linkedin</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>핵인싸</th>
+                            <td>
+                                <div class="ui base radio checkbox">
+                                    <input type="radio" name="insa" checked="checked" class="hidden" tabindex="0">
+                                    <label>선택안함</label>
+                                </div>
+                                <div class="ui base radio checkbox">
+                                    <input type="radio" name="insa" class="hidden" tabindex="0">
+                                    <label>유</label>
+                                </div>
+                                <div class="ui base radio checkbox">
+                                    <input type="radio" name="insa" class="hidden" tabindex="0">
+                                    <label>무</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="selected">
+                        <table>
+                            <tr>
+                                <th><button class="clear"><i class="icon reset"><span class="blind">reset</span></i></button><span>전체해제</span></th>
+                                <td>
+                                    <button class="ui button del">AI</button>
+                                    <button class="ui button del">e-Learning</button>
+                                    <button class="ui button del">Intermediate</button>
+                                    <button class="ui button del">mySUNI</button>
+                                    <button class="ui button del">Coursera</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- .recommend-area -->
+                <div class="recommend-area">
+                    <div class="section-head">
+                        <span class="channel">AI Fundamental</span> 의 학습 과정 입니다. <span class="channel">(230)</span>
+                        <div class="right">
+                            <button onclick="window.open('../common/CO-05-01-04.html')" class="ui icon right button btn-blue">View all<i class="icon morelink"></i></button>
+                        </div>
+                    </div>
+                    <div class="scrolling">
+                        <ul class="belt">
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                    <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                    <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-head">
+                        <span class="channel">AI Tech Essential</span> 의 학습 과정 입니다. <span class="channel">(230)</span>
+                        <div class="right">
+                            <button class="ui icon right button btn-blue">View all<i class="icon morelink"></i></button>
+                        </div>
+                    </div>
+                    <div class="scrolling">
+                        <ul class="belt">
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                    <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                    <div class="ui label bold onlytext card-stamp"><i aria-hidden="true" class="stamp icon"></i><span>Stamp x4</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!-- 상태값: Required -->
+                                    <div class="ui card card-h">
+                                        <div class="card-ribbon-wrap">
+                                            <div class="ui ribbon2 label">핵인싸과정</div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Affiliate Marketing Masterclass: Newbie to Advanced Bootcamp</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="ui label onlytext bold"><i aria-hidden="true" class="icon state"></i><span>권장과정</span></div>
+                                                <div class="study-date">2019.10.10 필수 학습 등록</div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="add-list icon"></i><span class="blind">Add to my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ui cards box-cards">
+                                    <!--상태값: Enrolled-->
+                                    <div class="ui card card-h">
+                                        <div class="card-inner">
+                                            <!--썸네일-->
+                                            <div class="thumbnail"></div>
+                                            <!--//썸네일-->
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <div class="icon-area">
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="course icon"></i><span>Course</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label bold onlytext"><i aria-hidden="true" class="time2 icon"></i><span>1h 30m</span></div>
+                                                </div>
+                                                <div class="li">
+                                                    <div class="ui label onlytext"><i aria-hidden="true" class="complete icon"></i><span>이수 3,300명</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="foot-area">
+                                                <div class="fixed-rating s3">
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="title-area">
+                                                <div class="ui color purple label">AI</div>
+                                                <div class="header">Machine learning Complete Guide for Calculus - Deep</div>
+                                            </div>
+                                            <p class="text-area">
+                                                This is a template for a simple marketing or informational website. It includes a large callout called a jumbo Tron and three
+                                            </p>
+                                            <div class="btn-area">
+                                                <button class="ui icon button icon-line"><i class="remove2 icon"></i><span class="blind">Remove form my list</span></button>
+                                                <button class="ui button fix bg">상세보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // .recommend-area -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // .content -->
+<script>
+$('.ui.button.toggle').state();
+</script>
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

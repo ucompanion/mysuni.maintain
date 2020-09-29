@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>mySUNI</title>
+    <link rel="stylesheet" href="../../css/semantic.min.css">
+    <link rel="stylesheet" href="../../css/calendar.min.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- vendor prefix version
+<link rel="stylesheet" href="../../css/style.min.css">
+-->
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/semantic.min.js"></script>
+    <script src="../../js/state.min.js"></script>
+    <script src="../../js/calendar.min.js"></script>
+    <script src="../../js/modal.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+
+<body class="main">
+    <!--.notice-bar-->
+    <section class="ui notice-bar">
+        <div class="inner">
+            <div class="text">
+                <a href="#" class="ellipsis">[공지] 2020년 6월 20일 04:00~10:00시 까지 서비스 안정화를 위한 시스템 점검이 진행될 예정입니다.</a>
+            </div>
+            <div class="right">
+                <div class="ui black checkbox">
+                    <input type="checkbox" class="hidden" tabindex="0">
+                    <label>오늘 하루 보지 않기</label>
+                </div>
+                <button class="ui button close2"><span class="blind">close</span></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        if (!ui.fXGetCookie('notice')) {
+            $('.notice-bar').css('display', 'block');
+        }
+        $('.notice-bar button.close2').bind('click', function() {
+            if ($('.notice-bar .ui.checkbox input[type=checkbox]').prop('checked')) { // 오늘 하루 보지 않기 클릭시
+                ui.fXSetCookie('notice', true, 1);
+            }
+            $('.notice-bar').css('display', 'none');
+        })
+    </script>
+    <!-- .header -->
+    <section class="header">
+        <div class="group">
+            <div class="cont-inner">
+                <div class="g-logo">
+                    <a href="../main/MA-01-01.html" target="_blank">
+                        <i class="sk-university icon"><span class="blind">mySUNI</span></i>
+                    </a>
+                </div>
+                <div class="g-menu-detail">
+                    <button class="ui detail-open">Category</button>
+                    <div class="layer">
+                        <div class="table-css">
+                            <div class="row head">
+                                <div class="cell v-middle">College</div>
+                                <div class="cell v-middle">Channel</div>
+                            </div>
+                            <div class="row body">
+                                <div class="cell vtop">
+                                    <div class="select-area">
+                                        <div class="scrolling">
+                                            <button class="active">AI</button><!-- .active 활성화 // -->
+                                            <button>DT</button>
+                                            <button>행복</button>
+                                            <button>SV</button>
+                                            <button>혁신디자인</button>
+                                            <button>Global</button>
+                                            <button>Leadership</button>
+                                            <button>Management</button>
+                                            <button>반도체</button>
+                                            <button>에너지솔루션</button>
+                                            <button>SK아카데미</button>
+                                            <button>SK경영</button>
+                                            <button>Life Style</button>
+                                            <button>SK㈜ C&C</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell vtop">
+                                    <div class="select-area">
+                                        <div class="scrolling">
+                                            <button onclick="window.open('../common/CO-05-01-01.html')">AI 전체보기 <span>(125)</span></button>
+                                            <button onclick="window.open('../common/CO-05-01-04.html')">AI Fundamental <span>(34)</span></button>
+                                            <button>AI Biz. Implemetation <span>(20)</span></button>
+                                            <button>AI Tech Essential <span>(14)</span></button>
+                                            <button>Computer Vison AI <span>(20)</span></button>
+                                            <button>Language AI <span>(13)</span></button>
+                                            <button>Speech AI <span>(8)</span></button>
+                                            <button>AI Tech Advanced <span>(13)</span></button>
+                                            <button>AI technologies <span>(3)</span></button>
+                                            <button>AI Digital Reasoning <span>(19)</span></button>
+                                            <button>AI Lucidworks <span>(15)</span></button>
+                                            <button>AI Narrative Science <span>(12)</span></button>
+                                            <button>AI SAS <span>(8)</span></button>
+                                            <button>AI Yseop <span>(5)</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="window.open('../mypage/MY-01-01-P02-2.html')" class="ui icon button img-icon change-channel-of-interest"><span class="underline">관심 Channel 변경<i class="setting17 icon"></i></button>
+                    <button class="ui close"><i class="new16x17 icon"><span class="blind">close</span></i></button>
+                    </div>
+                </div>
+                <div class="g-menu">
+                    <div class="nav">
+                        <a href="../learning/ML-02-02.html" target="_blank" class="item active">Learning</a><!-- .active // -->
+                        <a href="../community/CM-01-01.html" target="_blank" class="item">Community</a>
+                        <a href="../recommend/RC-01-01.html" target="_blank" class="item">Recommend</a>
+                        <a href="../certification/CT-01-01.html" target="_blank" class="item">Certification</a>
+                    </div>
+                </div>
+                <div class="g-search">
+                    <div class="ui h38 search input">
+                        <input type="text" placeholder="Search" value="" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <a href="../search/SE-01-01.html" target="_blank"><i aria-hidden="true" class="search link icon"></i></a>
+                    </div>
+                </div>
+                <div class="g-info">
+                    <button class="ui user image label fn-balloon">
+                        <span class="name">김유니김유니김유니김유니김유니김유니김유니</span>
+                        <span class="affiliation">플랫폼 개발 1팀플랫폼 개발 1팀플랫폼 개발 1팀플랫폼 개발 1팀플랫폼 개발 1팀</span>
+                        <img src="../../img/profile-36-px.png" alt="profile" />
+                    </button>
+                    <div class="balloon-pop">
+                        <ul>
+                            <li><a href="../mypage/MY-01-01.html"><i aria-hidden="true" class="balloon mypage icon"></i><span>My Page</span></a></li>
+                            <li><button type="button" onclick="window.open('../login/LO-01-01.html')"><i aria-hidden="true" class="balloon logout icon"></i><span>Logout</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="cont-inner">
+                <div class="ui standard breadcrumb">
+                    <a class="section">Home</a>
+                    <i class="right chevron icon divider"></i>
+                    <a class="section">depth1</a>
+                    <i class="right chevron icon divider"></i>
+                    <div class="active section">depth2</div>
+                </div>
+                <div class="right">
+                    <a href="../support/SU-01-01.html" target="_blank">
+                        <i class="support12 icon"></i>
+                        <span>Support</span>
+                        <i class="arrow8 black-jump icon"></i>
+                    </a>
+                    <div class="help-desk"><i class="help-tel icon"></i>Help Desk : 02-6323-9002</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        <!-- .main-wrap -->
+        <div class="main-wrap">
+
+            <!--My Learning Information -->
+            <div class="main-info-box">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="ui profile">
+                                <div class="pic s80">
+                                    <img src="../../img/profile-80-px.png" alt="프로필사진 임시이미지" />
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="hello">안녕하세요</div>
+                                <div class="user-name"><strong class="ellipsis">Elizabeth Samantha Victoria Ophelia</strong><span>님</span></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="title">총 학습시간</div>
+                            <a href="#">
+                                <span class="wating">학습대기중</span>
+                            </a>
+                        </td>
+                        <td>
+                            <div class="title">완료된 학습</div>
+                            <a href="#">
+                                <span class="big">00</span><span class="small">개</span>
+                            </a>
+                        </td>
+                        <td>
+                            <div class="title">My Badge</div>
+                            <a href="#">
+                                <span class="big">00</span><span class="small">개</span>
+                            </a>
+                        </td>
+                        <td>
+                            <div class="title">My Stamp</div>
+                            <a href="#">
+                                <span class="big">00</span><span class="small">개</span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main-learning-link">
+                <div class="inner">
+                    <div class="left">
+                        <div><a href="#"><i class="icon channel24"></i><span>관심 채널 설정</span></a></div>
+                        <div><a href="#"><i class="icon add24"></i><span>개인학습</span></a></div>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="contact-us"><span>1:1 문의하기</span><i class="arrow-g-16 icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--//My Learning Information-->
+
+            <!--학습중인과정-->
+            <div class="scrolling-area area1">
+                <div class="ui full segment">
+                    <div class="section-head">
+                        <div class="strong"><span class="ellipsis">김유니</span>님이 학습중인 과정입니다</div>
+                    </div>
+                    <!--콘텐츠 없음-->
+                    <div class="no-cont-wrap">
+                        <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                        <div class="text">진행중인 학습 과정이 없습니다.</div>
+                        <a href="#recommend" class="ui icon right button btn-blue2"><span class="border"><span class="ellipsis">김유니</span> 님에게 추천하는 학습 과정 보기</span><i class="icon morelink"></i></a>
+                    </div>
+                    <!--//콘텐츠 없음-->
+                </div>
+            </div>
+            <!--//학습중인 과정-->
+
+            <!--뱃지-->
+            <div class="scrolling-area badge-scrolling">
+                <div class="ui full segment">
+                    <div class="section-head">
+                        <div class="strong"><span class="ellipsis">김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니김유니</span>님이 도전중인 Badge</div>
+                    </div>
+                    <!--뱃지리스트-->
+                    <!--콘텐츠 없음-->
+                    <div class="no-cont-wrap">
+                        <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                        <div class="text">도전중인 Badge가 없습니다. <br />새로운 Badge에 도전해보시겠습니까?</div>
+                            <a href="#recommend" class="ui icon right button btn-blue2"><span class="border">Badge List 바로가기</span><i class="icon morelink"></i></a>
+                        </div>
+                        <!--//콘텐츠 없음-->
+                    </div>
+                </div>
+                <!--//뱃지-->
+
+                <!-- .middle-swiper -->
+                <div class="middle-swiper">
+                    <div class="ui full segment">
+                        <div class="swiper-section type2">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/img-promotion.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/img-promotion.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/img-promotion.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../img/promotion-1200-x-240.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="navi">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // .middle-swiper -->
+
+
+                <!--권장과정, 신규학습과정, 인기과정-->
+                <div class="scrolling-area area2">
+                    <div class="ui full segment">
+                        <div class="section-head">
+                            <div class="strong">SK 구성원이라면 꼭 들어야 하는 필수 권장 학습 과정!</div>
+                        </div>
+                        <!--콘텐츠 없음-->
+                        <div class="no-cont-wrap">
+                            <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                            <div class="text">권장과정에 해당하는 학습 과정이 없습니다.</div>
+                        </div>
+                        <!--//콘텐츠 없음-->
+
+                        <div class="section-head">
+                            <div class="strong">mySUNI 5월 4주 신규 학습 과정</div>
+                        </div>
+                        <!--콘텐츠 없음-->
+                        <div class="no-cont-wrap">
+                            <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                            <div class="text">등록된 학습 과정이 없습니다.</div>
+                            <a href="#recommend" class="ui icon right button btn-blue2"><span class="border"><span class="ellipsis">김유니</span> 님에게 추천하는 학습 과정 보기</span><i class="icon morelink"></i></a>
+                        </div>
+                        <!--//콘텐츠 없음-->
+                        <div class="section-head">
+                            <div class="strong">학습자들의 평가가 좋은 인기과정입니다.</div>
+                        </div>
+                        <!--콘텐츠 없음-->
+                        <div class="no-cont-wrap">
+                            <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                            <div class="text">등록된 학습 과정이 없습니다.</div>
+                            <a href="#recommend" class="ui icon right button btn-blue2"><span class="border"><span class="ellipsis">김유니김유니김유니김유니김유니김유니김유니김유니</span> 님에게 추천하는 학습 과정 보기</span><i class="icon morelink"></i></a>
+                        </div>
+                        <!--//콘텐츠 없음-->
+                        <!--//콘텐츠 없음-->
+                        <div class="section-head">
+                            <div class="strong">mySUNI가 <span class="ellipsis">김유니</span>님만을 위해 추천하는 과정입니다.</div>
+                        </div>
+                        <!--콘텐츠 없음-->
+                        <div class="no-cont-wrap">
+                            <i class="icon no-contents80"><span class="blind">콘텐츠 없음</span></i>
+                            <div class="text">추천과정에 해당하는 학습 과정이 없습니다.</div>
+                            <a href="#recommend" class="ui icon right button btn-blue2"><span class="border"><span class="ellipsis">김유니김유니김유니김유니김유니김유니김유니김유니</span> 님에게 추천하는 학습 과정 보기</span><i class="icon morelink"></i></a>
+                        </div>
+                        <!--//콘텐츠 없음-->
+                    </div>
+                </div>
+                <!--//권장과정, 신규학습과정, 인기과정-->
+
+
+            </div>
+            <!-- // .main-wrap -->
+    </section>
+    <!-- // .content -->
+
+    <script>
+        var swiper2 = new Swiper('.type2 .swiper-container', {
+            effect: 'fade',
+            simulateTouch: false,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- .quick -->
+    <section class="quick">
+        <div class="cont-inner">
+            <div class="q-group">
+                <a href="#top" class="ui top button">TOP</a>
+                <button class="ui quick button"></button><!-- .active // -->
+
+                <div class="quick-menu">
+                    <div class="ui quick-black horizontal buttons">
+                        <button onclick="window.open('../learning/ML-02-02.html')" class="ui button"><i aria-hidden="ture" class="learning32 icon"></i><i class="new16 icon"><span class="blind">new</span></i>Learning</button>
+                        <button onclick="window.open('../community/CM-08-01.html')" class="ui button"><i aria-hidden="ture" class="community32 icon"></i><i class="new16 icon"><span class="blind">new</span></i>Community</button>
+                        <button onclick="window.open('../support/SU-03-01.html')" class="ui button"><i aria-hidden="ture" class="support32 icon"></i><i class="new16 icon"><span class="blind">new</span></i>Support</button>
+                    </div>
+                    <div class="ui quick-black vertical buttons">
+                        <button onclick="window.open('../introduction/IN-01-01.html')" class="ui button"><i aria-hidden="ture" class="building icon"></i>mySUNI Introduction</button>
+                        <button onclick="window.open('../mypage/MY-01-01-P02.html')" class="ui button"><i aria-hidden="ture" class="admin icon"></i>관심 Channel</button>
+                        <button onclick="window.open('../mypage/MY-03-01.html')" class="ui button"><i aria-hidden="ture" class="confirm icon"></i>승인관리</button>
+                        <button onclick="window.open('../learning/ML-03-02.html')" class="ui button"><i aria-hidden="ture" class="apl icon"></i>개인학습 등록</button>
+                        <button onclick="window.open('../common/CO-05-01.html')" class="ui button"><i aria-hidden="ture" class="sitemap icon"></i>Site Map</button>
+                        <button class="ui button"><i aria-hidden="ture" class="admin24 icon"></i>Admin Site</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // .quick -->
+    <!-- .footer -->
+    <section class="footer">
+        <div class="cont-inner">
+            <i class="s-kuniversity icon"><span class="blind">mySUNI</span></i>
+            <div class="f-copyright">
+                COPYRIGHT<i class="copyright icon"><span class="blind">copyright sign</span></i>mySUNI. ALL RIGHTS RESERVED.
+            </div>
+            <div class="f-nav">
+                <a href="../introduction/IN-01-01.html" target="_blank" class="item">Introduction</a>
+                <a href="../support/SU-01-01.html" target="_blank" class="item">Notice</a>
+                <a href="../support/SU-02-01.html" target="_blank" class="item">FAQ</a>
+                <a href="../support/SU-03-01.html" target="_blank" class="item">1:1 문의하기</a>
+                <a href="../common/CO-03-02.html" target="_blank" class="item active">개인정보 처리방침</a>
+            </div>
+            <!-- 개발 구현시까지 주석처리
+        <div class="ui country buttons">
+            <button class="ui button active">KR</button>
+            <button class="ui button">EN</button>
+        </div>
+        -->
+        </div>
+    </section>
+    <!-- // .footer -->
+    <script>
+        /**
+         * comment  : semantic-ui 호출 영역
+         * param    : 
+         * @author  : kimjaeseong
+         * @date    : 
+         */
+
+
+        /* 국가 선택 */
+        var $buttons = $('.ui.buttons.country .button'),
+            handler = {
+                activate: function() {
+                    $(this)
+                        .addClass('active')
+                        .siblings()
+                        .removeClass('active');
+                },
+                toggleReplies: function() { // 덧글 
+                    if ($(this).hasClass('active')) {
+                        $(this).removeClass('active').text('View Replies');
+                        $(this).closest('.comment').find('.comments, .more').addClass('collapsed');
+                    } else {
+                        $(this).addClass('active').text('Hide Replies');
+                        $(this).closest('.comment').find('.comments, .more').removeClass('collapsed');
+                    }
+                },
+            }
+        $buttons.on('click', handler.activate);
+        /* 스틱키 */
+        $('.ui.sticky.offset0').visibility({
+            type: 'fixed',
+            offset: 0
+        });
+        $('.ui.sticky.offset48').visibility({
+            type: 'fixed',
+            offset: 48
+        });
+        $('#example3 .ui.sticky').sticky({
+            context: '#example3',
+            offset: 150
+        });
+        /* 퀵메뉴  */
+        $toggle = $('button.quick');
+        $toggle.state();
+
+        /* 탭 */
+        $('.menu .item').tab();
+        /* 체크박스 라디오버튼 */
+        $('.ui.checkbox').checkbox();
+
+        /* 덧글 대댓글 토글 버튼 */
+        $reply = $('.cmt');
+        $reply.on('click', handler.toggleReplies);
+
+        /* dropdown : 선택시 추가 텍스트가 필요하면 data-add속성 사용 */
+
+        $('.ui.dropdown').dropdown({
+            onChange: function(val, text, choice) {
+                if (this.getAttribute("data-add") !== undefined && this.getAttribute("data-add") !== null) {
+                    this.getElementsByClassName("text")[0].innerHTML = text + this.getAttribute("data-add");
+                }
+            }
+        });
+
+
+        /* ML-03-01 : 시작일 종료일 */
+        if ($('#rangestart').length) {
+            $('#rangestart').calendar({
+                type: 'date',
+                endCalendar: $('#rangeend'),
+                formatter: {
+                    date: function(date, settings) {
+                        if (!date) return '';
+                        var day = date.getDate();
+                        var month = date.getMonth() + 1;
+                        var year = (date.getFullYear() + '');
+                        return year + '.' + month + '.' + day;
+                    }
+                }
+            });
+        }
+        if ($('#rangeend').length) {
+            $('#rangeend').calendar({
+                type: 'date',
+                startCalendar: $('#rangestart'),
+                formatter: {
+                    date: function(date, settings) {
+                        if (!date) return '';
+                        var day = date.getDate();
+                        var month = date.getMonth() + 1;
+                        var year = (date.getFullYear() + '');
+                        return year + '.' + month + '.' + day;
+                    }
+                }
+            });
+        }
+        /* MY-01-01-P02 : 아코디언 */
+
+        $('.select-area .accordion').accordion({
+            selector: {
+                trigger: '.title'
+            },
+            exclusive: false
+        });
+
+        /* CM-01-01 : 아코디언 */
+
+        $('.community-accordion .accordion').accordion({
+            selector: {
+                trigger: '.dropdown'
+            }
+        });
+
+        /*LO-07-01 hover시 popup*/
+        $('label.pop').popup({
+            inline: false,
+            hoverable: true,
+            position: 'bottom left'
+        });
+
+
+        /* 탭 기능 */
+        $('.ui.sku.menu').tab();
+
+        /*button toggle 공통 (CO-05-01-01,RC-01-01) */
+        $('.ui.button.toggle').state();
+
+        /**
+         * comment  : ui.js 호출 영역
+         * param    : 
+         * @author  : kimjaeseong
+         * @date    : 
+         */
+        (function() {
+            ui.fxInit();
+        })();
+    </script>
+</body>
+
+</html>

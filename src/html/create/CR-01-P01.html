@@ -1,0 +1,52 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+    <div class="ui full segment">
+
+        <div class="ui base w700 modal">
+            <div class="header">동영상 제작하기</div>
+            <div class="content">
+                <div class="scrolling-80vh">
+                    <div class="content-wrap1">
+                        <div class="table-css type1 type4">
+                            <div class="row">
+                                <div class="cell th"><span class="dot">Panopto 설치 확인</span></div>
+                                <div class="cell">
+                                    <span class="text1">Panopto가 열리지 않은 경우 아래 최신 버전의 Panopto를 다운로드하여 설치여부를 확인하십시오.</span>
+                                    <span class="text5"><button class="ui icon left button icon-big-line2"><i class="icon open"></i><span>Panopto 열기</span></button></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell"><span class="dot">Panopto 다운로드</span></div>
+                                <div class="cell">
+                                    <span class="text1">PanoptoPoint, 비디오 및 오디오 프리젠테이션을 레코딩 합니다. 레코딩 결과를 Panopto 사이트에 업로드하여 학생 및 동료들과 공유하십시오.</span>
+                                    <span class="text5"><button class="ui icon left button icon-big-line2"><i class="icon download2"></i><span>Panopto 다운로드</span></button><span class="desc">macOS 10.13 이상 버전용</span></span>
+                                    <span class="text1">기타 다운로드 옵션을 보려면 <a href="#">여기</a>를 클릭하십시오.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions2">
+                <button class="ui button pop2 d">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- // .content -->
+
+<script>
+$('.ui.modal').modal('show');
+</script>
+
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>

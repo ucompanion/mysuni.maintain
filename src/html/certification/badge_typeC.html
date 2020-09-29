@@ -1,0 +1,93 @@
+@@include("head.html",{
+    "title" : "mySUNI"
+})
+<body>
+@@include('header.html')
+<style>
+    .content{padding:20px;}
+    h2.tt{font-size:20px; font-weight:700; margin:20px;}
+    .badgeB{float:left; margin-right:27px;}
+    .parents{margin-bottom:30px;}
+    .parents::after{content:''; display:block; clear:both;}
+    .parents .badgeB:last-child{margin-right:0}
+</style>
+<!-- .content -->
+<section class="content">
+    <div class="parents">
+        <h2 class="tt">size:280x280 / 뱃지에 링크 있는 경우</h2>
+        <!-- 클래스명으로 구분, 클래스명 : badgeB(뱃지), s280(사이즈) basic(레벨)-->
+        <a href="#none" class="badgeC s280 basic">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer EmpathyCustomer EmpathyCustomer EmpathyCustomer Empathy</span></span></span>
+        </a>
+        <a href="#none" class="badgeC s280 intermediate">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </a>
+        <a href="#none" class="badgeC s280 advanced">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </a>
+    </div>
+
+    <div class="parents">
+        <h2 class="tt">size:220x220 / 뱃지에 링크 있는 경우</h2>
+        <!-- 클래스명으로 구분, 클래스명 : badgeB(뱃지), s220(사이즈) basic(레벨) -->
+        <a href="#none" class="badgeC s220 basic">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer EmpathyCustomer EmpathyCustomer Empathy</span></span></span>
+        </a>
+        <a href="#none" class="badgeC s220 intermediate">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </a>
+        <a href="#none" class="badgeC s220 advanced">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </a>
+    </div>
+
+    <div class="parents">
+        <h2 class="tt">size:280x280 / 뱃지에 링크 없는 경우</h2>
+        <!-- 클래스명으로 구분, 클래스명 : badgeB(뱃지), s280(사이즈) basic(레벨) )-->
+        <!--링크 없을 시 a태그만 div태그로 수정하면 됨-->
+       <div class="badgeC s280 basic">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+       <div class="badgeC s280 intermediate">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+       <div class="badgeC s280 advanced">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+    </div>
+
+    
+    <div class="parents">
+        <h2 class="tt">size:220x220 / 뱃지에 링크 없는 경우</h2>
+        <!-- 클래스명으로 구분, 클래스명 : badgeB(뱃지), s220(사이즈) basic(레벨)-->
+        <!--링크 없을 시 a태그만 div태그로 수정하면 됨-->
+       <div class="badgeC s220 basic">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+       <div class="badgeC s220 intermediate">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+       <div class="badgeC s220 advanced">
+            <span class="issuing"><img src="../../img/logo-badgeC.svg" alt="발급기관:mySUNI" /></span>
+            <span class="title"><span class="cell"><span>Customer Empathy</span></span></span>
+        </div>
+    </div>
+
+</section>
+<!-- // .content -->
+@@include("quick.html")
+@@include("footer.html")
+@@include("script.html")
+</body>
+</html>
